@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3138,34 +3138,34 @@ Source: DCJ0202.pdf</description>
 <wire x1="-12.7" y1="-26.67" x2="12.7" y2="-26.67" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-26.67" x2="12.7" y2="26.67" width="0.254" layer="94"/>
 <wire x1="12.7" y1="26.67" x2="-12.7" y2="26.67" width="0.254" layer="94"/>
-<pin name="CP1" x="-17.78" y="12.7" visible="pin" length="middle"/>
-<pin name="CP2" x="-17.78" y="10.16" visible="pin" length="middle"/>
-<pin name="DIR" x="-17.78" y="2.54" visible="pin" length="middle" direction="in"/>
-<pin name="ENABLE" x="-17.78" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="CP1" x="-17.78" y="15.24" visible="pin" length="middle"/>
+<pin name="CP2" x="-17.78" y="12.7" visible="pin" length="middle"/>
+<pin name="DIR" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="ENABLE" x="-17.78" y="-5.08" visible="pin" length="middle" direction="in"/>
 <pin name="GND1" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
 <pin name="GND2" x="-17.78" y="-20.32" visible="pin" length="middle" direction="pwr"/>
 <pin name="GND_PAD" x="-17.78" y="-22.86" visible="pin" length="middle" direction="pwr"/>
-<pin name="MS1" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
-<pin name="MS2" x="-17.78" y="-5.08" visible="pin" length="middle" direction="in"/>
-<pin name="MS3" x="-17.78" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="MS1" x="-17.78" y="-7.62" visible="pin" length="middle" direction="in"/>
+<pin name="MS2" x="-17.78" y="-10.16" visible="pin" length="middle" direction="in"/>
+<pin name="MS3" x="-17.78" y="-12.7" visible="pin" length="middle" direction="in"/>
 <pin name="NC1" x="17.78" y="-17.78" visible="pin" length="middle" direction="nc" rot="R180"/>
 <pin name="NC2" x="17.78" y="-20.32" visible="pin" length="middle" direction="nc" rot="R180"/>
 <pin name="NC3" x="17.78" y="-22.86" visible="pin" length="middle" direction="nc" rot="R180"/>
-<pin name="OUT1A" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT1B" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT2A" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT2B" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT1A" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT1B" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT2A" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT2B" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
 <pin name="REF" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="RESET" x="-17.78" y="0" visible="pin" length="middle" direction="in"/>
-<pin name="ROSC" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="SENSE1" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SENSE2" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="SLEEP" x="-17.78" y="-12.7" visible="pin" length="middle" direction="in"/>
-<pin name="STEP" x="-17.78" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="RESET" x="-17.78" y="7.62" visible="pin" length="middle" direction="in"/>
+<pin name="ROSC" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="SENSE1" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="SENSE2" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SLEEP" x="-17.78" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="STEP" x="-17.78" y="0" visible="pin" length="middle" direction="in"/>
 <pin name="VBB1" x="17.78" y="22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="VBB2" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="VCP" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="VDD" x="-17.78" y="17.78" visible="pin" length="middle" direction="pwr"/>
+<pin name="VCP" x="17.78" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="-17.78" y="20.32" visible="pin" length="middle" direction="pwr"/>
 <pin name="VREG" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <text x="-12.7" y="-29.718" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
@@ -3301,9 +3301,9 @@ DEVONCOPELAND.CA</text>
 <wire x1="2.54" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="TRANS_S">
-<pin name="2" x="6.985" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="3" x="6.985" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<symbol name="Q_MOSFET">
+<pin name="2" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="3" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="2.54" y1="0" x2="4.445" y2="0" width="0.2032" layer="94"/>
 <wire x1="4.445" y1="-2.54" x2="4.445" y2="2.54" width="0.2032" layer="94"/>
@@ -3346,8 +3346,8 @@ DEVONCOPELAND.CA</text>
 <vertex x="7.62" y="-0.635"/>
 <vertex x="8.255" y="0.635"/>
 </polygon>
-<text x="11.43" y="-6.35" size="2.54" layer="96" ratio="10" rot="SR0">&gt;Value</text>
-<text x="11.43" y="0.635" size="2.54" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+<text x="11.43" y="-5.08" size="1.778" layer="96" ratio="10" rot="SR0">&gt;Value</text>
+<text x="11.43" y="0.635" size="1.778" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3927,7 +3927,7 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_SCREW_TERMINAL_2_POS">
+<deviceset name="J_SCREW_TERMINAL_2_POS" prefix="J">
 <gates>
 <gate name="G$1" symbol="J_CONNECTOR_2_POS" x="0" y="-2.54"/>
 </gates>
@@ -4072,7 +4072,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="U_OPAMP_MCP6001T-E/OT">
+<deviceset name="U_OPAMP_MCP6001T-E/OT" prefix="U">
 <description>1 MHz, Low-Power Op Amp</description>
 <gates>
 <gate name="G$1" symbol="U_OPAMP_SINGLE" x="0" y="0"/>
@@ -4322,7 +4322,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_MOLEX_502386">
+<deviceset name="J_MOLEX_502386" prefix="J">
 <gates>
 <gate name="A" symbol="J_CONNECTOR_14_POS" x="0" y="-2.54"/>
 </gates>
@@ -4350,7 +4350,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_SCREW_TERMINAL_4_POS">
+<deviceset name="J_SCREW_TERMINAL_4_POS" prefix="J">
 <gates>
 <gate name="A" symbol="J_CONNECTOR_4_POS" x="0" y="-2.54"/>
 </gates>
@@ -4571,9 +4571,9 @@ LETTER landscape</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STN2NF10" prefix="Q">
+<deviceset name="Q_MOSFET_STN2NF10" prefix="Q">
 <gates>
-<gate name="A" symbol="TRANS_S" x="0" y="0"/>
+<gate name="A" symbol="Q_MOSFET" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT-223">
@@ -4583,27 +4583,7 @@ LETTER landscape</description>
 <connect gate="A" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="CATEGORY" value="" constant="no"/>
-<attribute name="COPYRIGHT" value="Copyright C 2015 Accelerated Designs. All rights reserved" constant="no"/>
-<attribute name="DATASHEET" value="httpwww.st.cominternetcomTECHNICAL_RESOURCESTECHNICAL_LITERATUREDATASHEETCD00002442.pdf" constant="no"/>
-<attribute name="DIGIKEYPARTNUMBER" value="49780232ND" constant="no"/>
-<attribute name="DRAINTOSOURCEVOLTAGEVDSS" value="100V" constant="no"/>
-<attribute name="FETFEATURE" value="Standard" constant="no"/>
-<attribute name="FETTYPE" value="MOSFET NChannel Metal Oxide" constant="no"/>
-<attribute name="GATECHARGEQGVGS" value="14nC  10V" constant="no"/>
-<attribute name="INPUTCAPACITANCECISSVDS" value="280pF  25V" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="STN2NF10" constant="no"/>
-<attribute name="MOUNTINGTYPE" value="Surface Mount" constant="no"/>
-<attribute name="PACKAGECASE" value="TO2614 TO261AA" constant="no"/>
-<attribute name="PACKAGING" value="Tape &amp;amp Reel TR" constant="no"/>
-<attribute name="POWERMAX" value="3.3W" constant="no"/>
-<attribute name="QUANTITY_AVAILABLE" value="100000" constant="no"/>
-<attribute name="RDSONMAXIDVGS" value="260 mOhm  1.2A 10V" constant="no"/>
-<attribute name="SUPPLIERDEVICEPACKAGE" value="SOT223" constant="no"/>
-<attribute name="VENDOR" value="ST Microelectronics" constant="no"/>
-<attribute name="VGSTHMAXID" value="4V  250µA" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

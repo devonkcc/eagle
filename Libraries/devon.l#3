@@ -2283,17 +2283,17 @@ Source: DCJ0202.pdf</description>
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="1.5" y1="1.5" x2="1" y2="1.5" width="0.127" layer="51"/>
 </package>
-<package name="CLF12577NI-D">
-<smd name="2" x="-5.35" y="0" dx="4.5" dy="4.2" layer="1"/>
-<smd name="1" x="5.35" y="0" dx="4.5" dy="4.2" layer="1"/>
-<wire x1="-6.5" y1="3" x2="-6.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="-6.5" y1="6.5" x2="6.5" y2="6.5" width="0.127" layer="51"/>
-<wire x1="6.5" y1="6.5" x2="6.5" y2="3" width="0.127" layer="51"/>
-<wire x1="6.5" y1="-3" x2="6.5" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="6.5" y1="-6.5" x2="-6.5" y2="-6.5" width="0.127" layer="51"/>
-<wire x1="-6.5" y1="-6.5" x2="-6.5" y2="-3" width="0.127" layer="51"/>
-<text x="-6.5" y="7.5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
-<text x="-6.5" y="-8.5" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
+<package name="PA4344.104NLT">
+<smd name="2" x="0" y="-7.675" dx="12.5" dy="3.15" layer="1"/>
+<smd name="1" x="0" y="7.675" dx="12.5" dy="3.15" layer="1"/>
+<text x="-9.04" y="10.04" size="1.27" layer="51" ratio="10">&gt;NAME</text>
+<text x="-9" y="-11.45" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
+<wire x1="-7.62" y1="8.6" x2="-8.85" y2="8.6" width="0.127" layer="21"/>
+<wire x1="-8.85" y1="8.6" x2="-8.85" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="-8.85" y1="-8.6" x2="-7.62" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-8.6" x2="8.85" y2="-8.6" width="0.127" layer="21"/>
+<wire x1="8.85" y1="-8.6" x2="8.85" y2="8.6" width="0.127" layer="21"/>
+<wire x1="8.85" y1="8.6" x2="7.62" y2="8.6" width="0.127" layer="21"/>
 </package>
 <package name="KTT5_6P22X6P86">
 <smd name="1" x="-3.4" y="-9.652" dx="0.9652" dy="3.5052" layer="1"/>
@@ -2920,9 +2920,9 @@ Source: DCJ0202.pdf</description>
 <text x="-10.16" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-31.75" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="-15.24" y="22.86" length="middle" direction="pwr"/>
-<pin name="3V3OUT" x="-15.24" y="-5.08" length="middle" direction="out"/>
-<pin name="USBDP" x="-15.24" y="-10.16" length="middle"/>
-<pin name="USBDM" x="-15.24" y="-12.7" length="middle"/>
+<pin name="3V3OUT" x="-15.24" y="-17.78" length="middle" direction="out"/>
+<pin name="USBDP" x="-15.24" y="-12.7" length="middle"/>
+<pin name="USBDM" x="-15.24" y="-10.16" length="middle"/>
 <pin name="OSCO" x="-15.24" y="7.62" length="middle" direction="out"/>
 <pin name="OSCI" x="-15.24" y="10.16" length="middle" direction="in"/>
 <pin name="GND" x="17.78" y="-20.32" length="middle" direction="pwr" rot="R180"/>
@@ -2941,7 +2941,7 @@ Source: DCJ0202.pdf</description>
 <pin name="CBUS4" x="17.78" y="-10.16" length="middle" rot="R180"/>
 <pin name="VCCIO" x="-15.24" y="20.32" length="middle" direction="pwr"/>
 <pin name="!RESET" x="-15.24" y="15.24" length="middle" direction="in"/>
-<pin name="GND@A" x="-15.24" y="-17.78" length="middle" direction="pwr"/>
+<pin name="GND@A" x="-15.24" y="-25.4" length="middle" direction="pwr"/>
 <pin name="GND@1" x="17.78" y="-22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="TEST" x="17.78" y="-15.24" length="middle" direction="in" rot="R180"/>
 <pin name="GND@2" x="17.78" y="-25.4" length="middle" direction="pwr" rot="R180"/>
@@ -3119,54 +3119,40 @@ Source: DCJ0202.pdf</description>
 <text x="-5.08" y="4.572" size="1.778" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-5.588" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="U_5VSWITCHER_LM2576S-5.0/NOPB">
-<pin name="VIN" x="0" y="0" length="middle" direction="pwr"/>
-<pin name="OUT" x="0" y="-2.54" length="middle" direction="pwr"/>
-<pin name="GND" x="0" y="-5.08" length="middle" direction="pwr"/>
-<pin name="FB" x="35.56" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="*ON/OFF" x="35.56" y="-2.54" length="middle" direction="in" rot="R180"/>
-<pin name="TAB" x="35.56" y="0" length="middle" direction="pwr" rot="R180"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="-8.89" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-8.89" x2="30.48" y2="-8.89" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="-8.89" x2="30.48" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="30.48" y1="3.81" x2="5.08" y2="3.81" width="0.1524" layer="94"/>
-<text x="5.08" y="4.826" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="5.08" y="-11.938" size="2.0828" layer="96" font="fixed" ratio="6" rot="SR0">&gt;Value</text>
-</symbol>
 <symbol name="U_STEPPER_DRIVER_A4988">
 <wire x1="-12.7" y1="26.67" x2="-12.7" y2="-26.67" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-26.67" x2="12.7" y2="-26.67" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-26.67" x2="12.7" y2="26.67" width="0.254" layer="94"/>
 <wire x1="12.7" y1="26.67" x2="-12.7" y2="26.67" width="0.254" layer="94"/>
-<pin name="CP1" x="-17.78" y="12.7" visible="pin" length="middle"/>
-<pin name="CP2" x="-17.78" y="10.16" visible="pin" length="middle"/>
-<pin name="DIR" x="-17.78" y="2.54" visible="pin" length="middle" direction="in"/>
-<pin name="ENABLE" x="-17.78" y="-10.16" visible="pin" length="middle" direction="in"/>
-<pin name="GND1" x="-17.78" y="-17.78" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND2" x="-17.78" y="-20.32" visible="pin" length="middle" direction="pwr"/>
-<pin name="GND_PAD" x="-17.78" y="-22.86" visible="pin" length="middle" direction="pwr"/>
-<pin name="MS1" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
-<pin name="MS2" x="-17.78" y="-5.08" visible="pin" length="middle" direction="in"/>
-<pin name="MS3" x="-17.78" y="-7.62" visible="pin" length="middle" direction="in"/>
-<pin name="NC1" x="17.78" y="-17.78" visible="pin" length="middle" direction="nc" rot="R180"/>
-<pin name="NC2" x="17.78" y="-20.32" visible="pin" length="middle" direction="nc" rot="R180"/>
-<pin name="NC3" x="17.78" y="-22.86" visible="pin" length="middle" direction="nc" rot="R180"/>
-<pin name="OUT1A" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT1B" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT2A" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT2B" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="REF" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="RESET" x="-17.78" y="0" visible="pin" length="middle" direction="in"/>
-<pin name="ROSC" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="SENSE1" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SENSE2" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="SLEEP" x="-17.78" y="-12.7" visible="pin" length="middle" direction="in"/>
-<pin name="STEP" x="-17.78" y="5.08" visible="pin" length="middle" direction="in"/>
-<pin name="VBB1" x="17.78" y="22.86" visible="pin" length="middle" rot="R180"/>
-<pin name="VBB2" x="17.78" y="20.32" visible="pin" length="middle" rot="R180"/>
-<pin name="VCP" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="VDD" x="-17.78" y="17.78" visible="pin" length="middle" direction="pwr"/>
-<pin name="VREG" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="CP1" x="-17.78" y="15.24" length="middle"/>
+<pin name="CP2" x="-17.78" y="12.7" length="middle"/>
+<pin name="DIR" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="ENABLE" x="-17.78" y="-5.08" length="middle" direction="in"/>
+<pin name="GND1" x="-17.78" y="-17.78" length="middle" direction="pwr"/>
+<pin name="GND2" x="-17.78" y="-20.32" length="middle" direction="pwr"/>
+<pin name="GND_PAD" x="-17.78" y="-22.86" length="middle" direction="pwr"/>
+<pin name="MS1" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="MS2" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="MS3" x="-17.78" y="-12.7" length="middle" direction="in"/>
+<pin name="NC1" x="17.78" y="-17.78" length="middle" direction="nc" rot="R180"/>
+<pin name="NC2" x="17.78" y="-20.32" length="middle" direction="nc" rot="R180"/>
+<pin name="NC3" x="17.78" y="-22.86" length="middle" direction="nc" rot="R180"/>
+<pin name="OUT1A" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT1B" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="OUT2A" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="OUT2B" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="REF" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="RESET" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="ROSC" x="-17.78" y="2.54" length="middle"/>
+<pin name="SENSE1" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="SENSE2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="SLEEP" x="-17.78" y="5.08" length="middle" direction="in"/>
+<pin name="STEP" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="VBB1" x="17.78" y="22.86" length="middle" rot="R180"/>
+<pin name="VBB2" x="17.78" y="20.32" length="middle" rot="R180"/>
+<pin name="VCP" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="VDD" x="-17.78" y="20.32" length="middle" direction="pwr"/>
+<pin name="VREG" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <text x="-12.7" y="-29.718" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
@@ -3221,7 +3207,7 @@ Source: DCJ0202.pdf</description>
 <wire x1="7.366" y1="0" x2="7.62" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.794" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
-<symbol name="U_5VSWITCHER_TL2575-05_KTT_5">
+<symbol name="U_5VSWITCHER_LM2576SX-5.0/NOPB">
 <pin name="VIN" x="0" y="-2.54" length="middle" direction="in"/>
 <pin name="OUTPUT" x="40.64" y="-5.08" length="middle" direction="out" rot="R180"/>
 <pin name="GND" x="0" y="-7.62" length="middle" direction="pwr"/>
@@ -3927,7 +3913,7 @@ Source: www.kingbright.com</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_SCREW_TERMINAL_2_POS">
+<deviceset name="J_SCREW_TERMINAL_2_POS" prefix="J">
 <gates>
 <gate name="G$1" symbol="J_CONNECTOR_2_POS" x="0" y="-2.54"/>
 </gates>
@@ -4072,7 +4058,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="U_OPAMP_MCP6001T-E/OT">
+<deviceset name="U_OPAMP_MCP6001T-E/OT" prefix="U">
 <description>1 MHz, Low-Power Op Amp</description>
 <gates>
 <gate name="G$1" symbol="U_OPAMP_SINGLE" x="0" y="0"/>
@@ -4111,31 +4097,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="U_5VSWITCHER_LM2576S-5.0/NOPB">
-<gates>
-<gate name="A" symbol="U_5VSWITCHER_LM2576S-5.0/NOPB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TS5B">
-<connects>
-<connect gate="A" pin="*ON/OFF" pad="5"/>
-<connect gate="A" pin="FB" pad="4"/>
-<connect gate="A" pin="GND" pad="3"/>
-<connect gate="A" pin="OUT" pad="2"/>
-<connect gate="A" pin="TAB" pad="6"/>
-<connect gate="A" pin="VIN" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="3D_LIBRARY_NAME" value="National_9262011" constant="no"/>
-<attribute name="COPYRIGHT" value="Copyright C 2015 Accelerated Designs. All rights reserved" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="LM2576SX5.0NOPB" constant="no"/>
-<attribute name="VENDOR" value="National Semiconductor" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -4275,12 +4236,12 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="L_INDUCTOR_CLF12577NI-D" prefix="L">
+<deviceset name="L_INDUCTOR_PA4344.104NLT" prefix="L">
 <gates>
 <gate name="A" symbol="L_INDUCTOR" x="5.08" y="0"/>
 </gates>
 <devices>
-<device name="" package="CLF12577NI-D">
+<device name="" package="PA4344.104NLT">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
@@ -4291,9 +4252,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="U_5VSWITCHER_TL2575-05IKTTR" prefix="U">
+<deviceset name="U_5VSWITCHER_LM2576SX-5.0/NOPB" prefix="U">
 <gates>
-<gate name="A" symbol="U_5VSWITCHER_TL2575-05_KTT_5" x="0" y="0"/>
+<gate name="A" symbol="U_5VSWITCHER_LM2576SX-5.0/NOPB" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="KTT5_6P22X6P86">
@@ -4322,7 +4283,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_MOLEX_502386">
+<deviceset name="J_MOLEX_502386" prefix="J">
 <gates>
 <gate name="A" symbol="J_CONNECTOR_14_POS" x="0" y="-2.54"/>
 </gates>
@@ -4350,7 +4311,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="J_SCREW_TERMINAL_4_POS">
+<deviceset name="J_SCREW_TERMINAL_4_POS" prefix="J">
 <gates>
 <gate name="A" symbol="J_CONNECTOR_4_POS" x="0" y="-2.54"/>
 </gates>

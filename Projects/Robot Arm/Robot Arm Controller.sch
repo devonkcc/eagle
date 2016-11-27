@@ -1841,25 +1841,33 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="3.8608" y1="-5.5118" x2="3.8608" y2="-7.5438" width="0.1524" layer="21"/>
 <text x="-5.461" y="-10.287" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 </package>
-<package name="PCAP_SVP_F12">
-<smd name="1" x="-4.3561" y="0" dx="3.9116" dy="2.1082" layer="1"/>
-<smd name="2" x="4.3561" y="0" dx="3.9116" dy="2.1082" layer="1"/>
-<wire x1="5.3848" y1="1.397" x2="5.3848" y2="5.3848" width="0.1524" layer="21"/>
-<wire x1="-5.3848" y1="-1.397" x2="-5.3848" y2="-5.3848" width="0.1524" layer="21"/>
-<wire x1="-7.0612" y1="0" x2="-7.8232" y2="0" width="0.1524" layer="21"/>
-<wire x1="-7.4168" y1="0.381" x2="-7.4168" y2="-0.381" width="0.1524" layer="21"/>
-<wire x1="-5.3848" y1="-5.3848" x2="5.3848" y2="-5.3848" width="0.1524" layer="21"/>
-<wire x1="5.3848" y1="-5.3848" x2="5.3848" y2="-1.397" width="0.1524" layer="21"/>
-<wire x1="5.3848" y1="5.3848" x2="-5.3848" y2="5.3848" width="0.1524" layer="21"/>
-<wire x1="-5.3848" y1="5.3848" x2="-5.3848" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="-7.0612" y1="0" x2="-7.8232" y2="0" width="0.1524" layer="51"/>
-<wire x1="-7.4168" y1="0.381" x2="-7.4168" y2="-0.381" width="0.1524" layer="51"/>
-<wire x1="-5.2324" y1="2.6162" x2="-2.6162" y2="5.2324" width="0.1524" layer="51"/>
-<wire x1="-5.2324" y1="-2.6162" x2="-2.6162" y2="-5.2324" width="0.1524" layer="51"/>
-<wire x1="-5.2324" y1="-5.2324" x2="5.2324" y2="-5.2324" width="0.1524" layer="51"/>
-<wire x1="5.2324" y1="-5.2324" x2="5.2324" y2="5.2324" width="0.1524" layer="51"/>
-<wire x1="5.2324" y1="5.2324" x2="-5.2324" y2="5.2324" width="0.1524" layer="51"/>
-<wire x1="-5.2324" y1="5.2324" x2="-5.2324" y2="-5.2324" width="0.1524" layer="51"/>
+<package name="NPCAP_PXG_E61">
+<smd name="+" x="0" y="2" dx="1.5" dy="2.4" layer="1"/>
+<smd name="-" x="0" y="-2" dx="1.5" dy="2.4" layer="1"/>
+<wire x1="-2" y1="3.0612" x2="-2" y2="3.8232" width="0.1524" layer="21"/>
+<wire x1="-1.619" y1="3.4168" x2="-2.381" y2="3.4168" width="0.1524" layer="21"/>
+<wire x1="-2" y1="3.0612" x2="-2" y2="3.8232" width="0.1524" layer="51"/>
+<wire x1="-1.619" y1="3.4168" x2="-2.381" y2="3.4168" width="0.1524" layer="51"/>
+<wire x1="-2.65" y1="2.65" x2="-2.65" y2="-2.65" width="0.1524" layer="51"/>
+<wire x1="-2.65" y1="-2.65" x2="2.65" y2="-2.65" width="0.1524" layer="51"/>
+<wire x1="2.65" y1="-2.65" x2="2.65" y2="2.65" width="0.1524" layer="51"/>
+<wire x1="2.65" y1="2.65" x2="-2.65" y2="2.65" width="0.1524" layer="51"/>
+<wire x1="-1.9" y1="2.6" x2="-2.6" y2="1.9" width="0.127" layer="21"/>
+<wire x1="1.9" y1="2.6" x2="2.6" y2="1.9" width="0.127" layer="21"/>
+</package>
+<package name="NPCAP_PXG_JA0">
+<smd name="+" x="0" y="4" dx="1.7" dy="3.4" layer="1"/>
+<smd name="-" x="0" y="-4" dx="1.7" dy="3.4" layer="1"/>
+<wire x1="-3" y1="6.0612" x2="-3" y2="6.8232" width="0.1524" layer="21"/>
+<wire x1="-2.619" y1="6.4168" x2="-3.381" y2="6.4168" width="0.1524" layer="21"/>
+<wire x1="-3" y1="6.0612" x2="-3" y2="6.8232" width="0.1524" layer="51"/>
+<wire x1="-2.619" y1="6.4168" x2="-3.381" y2="6.4168" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="5.15" x2="-5.15" y2="-5.15" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="-5.15" x2="5.15" y2="-5.15" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="-5.15" x2="5.15" y2="5.15" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="5.15" x2="-5.15" y2="5.15" width="0.1524" layer="51"/>
+<wire x1="-2.9" y1="5.1" x2="-5.1" y2="2.9" width="0.127" layer="21"/>
+<wire x1="2.9" y1="5.1" x2="5.1" y2="2.9" width="0.127" layer="21"/>
 </package>
 <package name="PA4344.104NLT">
 <smd name="2" x="0" y="-7.675" dx="12.5" dy="3.15" layer="1"/>
@@ -2518,8 +2526,8 @@ DEVONCOPELAND.CA</text>
 <text x="5.08" y="-15.0114" size="1.778" layer="96" ratio="6" rot="SR0">&gt;Value</text>
 </symbol>
 <symbol name="C_CAPACITOR_ALUMINUM">
-<pin name="22" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="11" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="-" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="+" x="0" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="2.2098" y1="0.635" x2="2.2098" y2="1.905" width="0.2032" layer="94"/>
 <wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.2032" layer="94"/>
@@ -3636,21 +3644,34 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C_CAPACITOR_ALUMINUM_PCAP_SVP_F12" prefix="C">
+<deviceset name="C_100UF_ALUMINUM_APXG160ARA101ME61G" prefix="C">
 <gates>
 <gate name="A" symbol="C_CAPACITOR_ALUMINUM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PCAP_SVP_F12">
+<device name="" package="NPCAP_PXG_E61">
 <connects>
-<connect gate="A" pin="11" pad="1"/>
-<connect gate="A" pin="22" pad="2"/>
+<connect gate="A" pin="+" pad="+"/>
+<connect gate="A" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="16SVPF1000M" constant="no"/>
-<attribute name="VENDOR" value="PANASONIC" constant="no"/>
-</technology>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C_1000UF_ALUMINUM_APXG160ARA102MJA0G" prefix="C">
+<gates>
+<gate name="A" symbol="C_CAPACITOR_ALUMINUM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NPCAP_PXG_JA0">
+<connects>
+<connect gate="A" pin="+" pad="+"/>
+<connect gate="A" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4075,8 +4096,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="ZZ16" library="devon" deviceset="ZZ_NC" device=""/>
 <part name="ZZ17" library="devon" deviceset="ZZ_NC" device=""/>
 <part name="U4" library="devon" deviceset="U_5VSWITCHER_LM2576SX-5.0/NOPB" device="" value="U_5VSWITCHER_LM2576SX-5.0"/>
-<part name="C11" library="devon" deviceset="C_CAPACITOR_ALUMINUM_PCAP_SVP_F12" device="" value="100uF"/>
-<part name="C18" library="devon" deviceset="C_CAPACITOR_ALUMINUM_PCAP_SVP_F12" device="" value="1000uF"/>
+<part name="C11" library="devon" deviceset="C_100UF_ALUMINUM_APXG160ARA101ME61G" device="" value="100uF"/>
+<part name="C18" library="devon" deviceset="C_1000UF_ALUMINUM_APXG160ARA102MJA0G" device="" value="1000uF"/>
 <part name="L1" library="devon" deviceset="L_INDUCTOR_PA4344.104NLT" device="" value="100uH"/>
 <part name="P2" library="devon" deviceset="P_BARREL_2.1MM" device="" value="+12V INPUT"/>
 <part name="P+1" library="devon-supply" deviceset="+12V" device=""/>
@@ -4127,7 +4148,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="GND28" library="devon-supply" deviceset="GND" device=""/>
 <part name="R14" library="devon" deviceset="R_RESISTOR" device="1206" value="0.05"/>
 <part name="R15" library="devon" deviceset="R_RESISTOR" device="1206" value="0.05"/>
-<part name="C16" library="devon" deviceset="C_CAPACITOR_ALUMINUM_PCAP_SVP_F12" device="" value="100uF"/>
+<part name="C16" library="devon" deviceset="C_100UF_ALUMINUM_APXG160ARA101ME61G" device="" value="100uF"/>
 <part name="C17" library="devon" deviceset="C_CAPACITOR" device="C1206" value="4.7uF"/>
 <part name="C15" library="devon" deviceset="C_CAPACITOR" device="C0805" value="0.22uF"/>
 <part name="GND26" library="devon-supply" deviceset="GND" device=""/>
@@ -4158,6 +4179,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <part name="GND34" library="devon-supply" deviceset="GND" device=""/>
 <part name="R20" library="devon" deviceset="R_RESISTOR" device="0805" value="10K"/>
 <part name="P+24" library="devon-supply" deviceset="+5V" device=""/>
+<part name="C22" library="devon" deviceset="C_CAPACITOR" device="C0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4433,15 +4455,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="+5VHP_SENSE" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="ADC6"/>
-<wire x1="142.24" y1="-40.64" x2="127" y2="-40.64" width="0.1524" layer="91"/>
-<label x="129.54" y="-40.64" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="A-AUX" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="ADC7"/>
-<wire x1="142.24" y1="-43.18" x2="127" y2="-43.18" width="0.1524" layer="91"/>
-<label x="129.54" y="-43.18" size="1.778" layer="95"/>
+<wire x1="142.24" y1="-40.64" x2="119.38" y2="-40.64" width="0.1524" layer="91"/>
+<label x="121.92" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4706,13 +4721,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="124.46" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D-AUX" class="0">
-<segment>
-<pinref part="U3" gate="A" pin="PC0(ADC0)"/>
-<wire x1="185.42" y1="-30.48" x2="200.66" y2="-30.48" width="0.1524" layer="91"/>
-<label x="187.96" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="HALL_SIGNAL" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC1(ADC1)"/>
@@ -4957,6 +4965,20 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="121.92" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="A_AUX" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="ADC7"/>
+<wire x1="142.24" y1="-43.18" x2="119.38" y2="-43.18" width="0.1524" layer="91"/>
+<label x="121.92" y="-43.18" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="D_AUX" class="0">
+<segment>
+<pinref part="U3" gate="A" pin="PC0(ADC0)"/>
+<wire x1="185.42" y1="-30.48" x2="200.66" y2="-30.48" width="0.1524" layer="91"/>
+<label x="187.96" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -5077,6 +5099,7 @@ RANGE: 0-3.23A</text>
 <instance part="GND34" gate="1" x="165.1" y="-58.42"/>
 <instance part="R20" gate="A" x="215.9" y="-91.44"/>
 <instance part="P+24" gate="1" x="226.06" y="-91.44" rot="R270"/>
+<instance part="C22" gate="G$1" x="144.78" y="-109.22" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5106,7 +5129,7 @@ RANGE: 0-3.23A</text>
 <wire x1="27.94" y1="-7.62" x2="25.4" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C11" gate="A" pin="22"/>
+<pinref part="C11" gate="A" pin="-"/>
 <wire x1="33.02" y1="-38.1" x2="33.02" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
@@ -5123,7 +5146,7 @@ RANGE: 0-3.23A</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="106.68" y1="-33.02" x2="106.68" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="C18" gate="A" pin="22"/>
+<pinref part="C18" gate="A" pin="-"/>
 <wire x1="106.68" y1="-35.56" x2="116.84" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="-35.56" x2="127" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="127" y1="-35.56" x2="127" y2="-33.02" width="0.1524" layer="91"/>
@@ -5194,12 +5217,16 @@ RANGE: 0-3.23A</text>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="134.62" y1="-111.76" x2="124.46" y2="-111.76" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-111.76" x2="124.46" y2="-109.22" width="0.1524" layer="91"/>
-<pinref part="C16" gate="A" pin="22"/>
+<pinref part="C16" gate="A" pin="-"/>
 <wire x1="124.46" y1="-111.76" x2="114.3" y2="-111.76" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-111.76" x2="114.3" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-111.76" x2="124.46" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <junction x="124.46" y="-111.76"/>
+<pinref part="C22" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="-109.22" x2="144.78" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-111.76" x2="134.62" y2="-111.76" width="0.1524" layer="91"/>
+<junction x="134.62" y="-111.76"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND1"/>
@@ -5245,7 +5272,7 @@ RANGE: 0-3.23A</text>
 <wire x1="40.64" y1="-20.32" x2="50.8" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-27.94" x2="40.64" y2="-20.32" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="-27.94" x2="40.64" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="C11" gate="A" pin="11"/>
+<pinref part="C11" gate="A" pin="+"/>
 <wire x1="33.02" y1="-27.94" x2="33.02" y2="-30.48" width="0.1524" layer="91"/>
 <junction x="40.64" y="-20.32"/>
 <junction x="33.02" y="-27.94"/>
@@ -5266,16 +5293,20 @@ RANGE: 0-3.23A</text>
 <wire x1="114.3" y1="-99.06" x2="114.3" y2="-101.6" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="-99.06" x2="124.46" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="-99.06" x2="124.46" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="C16" gate="A" pin="11"/>
+<pinref part="C16" gate="A" pin="+"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="-99.06" x2="134.62" y2="-99.06" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="-99.06" x2="134.62" y2="-101.6" width="0.1524" layer="91"/>
 <junction x="104.14" y="-99.06"/>
 <junction x="114.3" y="-99.06"/>
 <junction x="124.46" y="-99.06"/>
 <junction x="96.52" y="-99.06"/>
 <junction x="96.52" y="-114.3"/>
+<wire x1="134.62" y1="-99.06" x2="134.62" y2="-101.6" width="0.1524" layer="91"/>
+<pinref part="C22" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="-99.06" x2="144.78" y2="-99.06" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-99.06" x2="144.78" y2="-101.6" width="0.1524" layer="91"/>
+<junction x="134.62" y="-99.06"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -5293,7 +5324,7 @@ RANGE: 0-3.23A</text>
 <segment>
 <pinref part="L1" gate="A" pin="2"/>
 <wire x1="121.92" y1="-22.86" x2="127" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="C18" gate="A" pin="11"/>
+<pinref part="C18" gate="A" pin="+"/>
 <wire x1="127" y1="-22.86" x2="134.62" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="127" y1="-25.4" x2="127" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U4" gate="A" pin="FEEDBACK"/>
@@ -5650,7 +5681,7 @@ RANGE: 0-3.23A</text>
 <label x="190.5" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A-AUX" class="0">
+<net name="A_AUX" class="0">
 <segment>
 <pinref part="J4" gate="A" pin="13"/>
 <wire x1="215.9" y1="-45.72" x2="187.96" y2="-45.72" width="0.1524" layer="91"/>
@@ -5786,7 +5817,7 @@ RANGE: 0-3.23A</text>
 <wire x1="20.32" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="D-AUX" class="0">
+<net name="D_AUX" class="0">
 <segment>
 <pinref part="J4" gate="A" pin="14"/>
 <wire x1="215.9" y1="-48.26" x2="187.96" y2="-48.26" width="0.1524" layer="91"/>

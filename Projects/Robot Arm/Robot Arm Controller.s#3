@@ -2224,12 +2224,12 @@ DEVONCOPELAND.CA</text>
 <pin name="ADC6" x="0" y="-10.16" length="middle" direction="in"/>
 <pin name="ADC7" x="0" y="-12.7" length="middle" direction="in"/>
 <pin name="AREF" x="0" y="-17.78" length="middle" direction="in"/>
-<pin name="PB0" x="0" y="-22.86" length="middle"/>
-<pin name="PB1" x="0" y="-25.4" length="middle"/>
-<pin name="PB2" x="0" y="-27.94" length="middle"/>
-<pin name="PB3" x="0" y="-30.48" length="middle"/>
-<pin name="PB4" x="0" y="-33.02" length="middle"/>
-<pin name="PB5" x="0" y="-35.56" length="middle"/>
+<pin name="PB0(D8)" x="0" y="-22.86" length="middle"/>
+<pin name="PB1(D9)" x="0" y="-25.4" length="middle"/>
+<pin name="PB2(D10)" x="0" y="-27.94" length="middle"/>
+<pin name="PB3(D11)" x="0" y="-30.48" length="middle"/>
+<pin name="PB4(D12)" x="0" y="-33.02" length="middle"/>
+<pin name="PB5(D13)" x="0" y="-35.56" length="middle"/>
 <pin name="PB6(XTAL1)" x="0" y="-38.1" length="middle"/>
 <pin name="PB7(XTAL2)" x="0" y="-40.64" length="middle"/>
 <pin name="GND_2" x="0" y="-45.72" length="middle" direction="pas"/>
@@ -2242,14 +2242,14 @@ DEVONCOPELAND.CA</text>
 <pin name="PC4(ADC4)" x="43.18" y="-10.16" length="middle" rot="R180"/>
 <pin name="PC5(ADC5)" x="43.18" y="-12.7" length="middle" rot="R180"/>
 <pin name="PC6(RESET)" x="43.18" y="-15.24" length="middle" rot="R180"/>
-<pin name="PD0" x="43.18" y="-20.32" length="middle" rot="R180"/>
-<pin name="PD1" x="43.18" y="-22.86" length="middle" rot="R180"/>
-<pin name="PD2" x="43.18" y="-25.4" length="middle" rot="R180"/>
-<pin name="PD3" x="43.18" y="-27.94" length="middle" rot="R180"/>
-<pin name="PD4" x="43.18" y="-30.48" length="middle" rot="R180"/>
-<pin name="PD5" x="43.18" y="-33.02" length="middle" rot="R180"/>
-<pin name="PD6" x="43.18" y="-35.56" length="middle" rot="R180"/>
-<pin name="PD7" x="43.18" y="-38.1" length="middle" rot="R180"/>
+<pin name="PD0(RX)" x="43.18" y="-20.32" length="middle" rot="R180"/>
+<pin name="PD1(TX)" x="43.18" y="-22.86" length="middle" rot="R180"/>
+<pin name="PD2(D2)" x="43.18" y="-25.4" length="middle" rot="R180"/>
+<pin name="PD3(D3)" x="43.18" y="-27.94" length="middle" rot="R180"/>
+<pin name="PD4(D4)" x="43.18" y="-30.48" length="middle" rot="R180"/>
+<pin name="PD5(D5)" x="43.18" y="-33.02" length="middle" rot="R180"/>
+<pin name="PD6(D6)" x="43.18" y="-35.56" length="middle" rot="R180"/>
+<pin name="PD7(D7)" x="43.18" y="-38.1" length="middle" rot="R180"/>
 <wire x1="5.08" y1="3.81" x2="5.08" y2="-54.61" width="0.4064" layer="94"/>
 <wire x1="5.08" y1="-54.61" x2="38.1" y2="-54.61" width="0.4064" layer="94"/>
 <wire x1="38.1" y1="-54.61" x2="38.1" y2="3.81" width="0.4064" layer="94"/>
@@ -2783,12 +2783,12 @@ LETTER landscape</description>
 <connect gate="A" pin="GND" pad="21"/>
 <connect gate="A" pin="GND_2" pad="3"/>
 <connect gate="A" pin="GND_3" pad="5"/>
-<connect gate="A" pin="PB0" pad="12"/>
-<connect gate="A" pin="PB1" pad="13"/>
-<connect gate="A" pin="PB2" pad="14"/>
-<connect gate="A" pin="PB3" pad="15"/>
-<connect gate="A" pin="PB4" pad="16"/>
-<connect gate="A" pin="PB5" pad="17"/>
+<connect gate="A" pin="PB0(D8)" pad="12"/>
+<connect gate="A" pin="PB1(D9)" pad="13"/>
+<connect gate="A" pin="PB2(D10)" pad="14"/>
+<connect gate="A" pin="PB3(D11)" pad="15"/>
+<connect gate="A" pin="PB4(D12)" pad="16"/>
+<connect gate="A" pin="PB5(D13)" pad="17"/>
 <connect gate="A" pin="PB6(XTAL1)" pad="7"/>
 <connect gate="A" pin="PB7(XTAL2)" pad="8"/>
 <connect gate="A" pin="PC0(ADC0)" pad="23"/>
@@ -2798,14 +2798,14 @@ LETTER landscape</description>
 <connect gate="A" pin="PC4(ADC4)" pad="27"/>
 <connect gate="A" pin="PC5(ADC5)" pad="28"/>
 <connect gate="A" pin="PC6(RESET)" pad="29"/>
-<connect gate="A" pin="PD0" pad="30"/>
-<connect gate="A" pin="PD1" pad="31"/>
-<connect gate="A" pin="PD2" pad="32"/>
-<connect gate="A" pin="PD3" pad="1"/>
-<connect gate="A" pin="PD4" pad="2"/>
-<connect gate="A" pin="PD5" pad="9"/>
-<connect gate="A" pin="PD6" pad="10"/>
-<connect gate="A" pin="PD7" pad="11"/>
+<connect gate="A" pin="PD0(RX)" pad="30"/>
+<connect gate="A" pin="PD1(TX)" pad="31"/>
+<connect gate="A" pin="PD2(D2)" pad="32"/>
+<connect gate="A" pin="PD3(D3)" pad="1"/>
+<connect gate="A" pin="PD4(D4)" pad="2"/>
+<connect gate="A" pin="PD5(D5)" pad="9"/>
+<connect gate="A" pin="PD6(D6)" pad="10"/>
+<connect gate="A" pin="PD7(D7)" pad="11"/>
 <connect gate="A" pin="VCC1" pad="4"/>
 <connect gate="A" pin="VCC2" pad="6"/>
 </connects>
@@ -4181,8 +4181,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="C10" gate="G$1" x="124.46" y="-30.48" rot="R90"/>
 <instance part="C7" gate="G$1" x="114.3" y="-30.48" rot="R90"/>
 <instance part="RN2" gate="A" x="208.28" y="-38.1" rot="R90"/>
-<instance part="RN2" gate="B" x="218.44" y="-60.96"/>
-<instance part="RN2" gate="C" x="218.44" y="-68.58"/>
+<instance part="RN2" gate="B" x="226.06" y="-60.96"/>
+<instance part="RN2" gate="C" x="226.06" y="-68.58"/>
 <instance part="RN2" gate="D" x="195.58" y="-142.24"/>
 <instance part="LED2" gate="G$1" x="86.36" y="-71.12" rot="R270"/>
 <instance part="Y1" gate="G$1" x="119.38" y="-81.28"/>
@@ -4193,16 +4193,16 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="GND15" gate="1" x="241.3" y="-53.34"/>
 <instance part="GND10" gate="1" x="109.22" y="-86.36"/>
 <instance part="GND13" gate="1" x="137.16" y="-86.36"/>
-<instance part="U2" gate="A" x="63.5" y="-48.26"/>
+<instance part="U2" gate="A" x="60.96" y="-48.26"/>
 <instance part="GND11" gate="1" x="114.3" y="-38.1"/>
-<instance part="ZZ5" gate="G$1" x="96.52" y="-50.8"/>
-<instance part="ZZ6" gate="G$1" x="96.52" y="-53.34"/>
-<instance part="C8" gate="G$1" x="114.3" y="-58.42" rot="R90"/>
-<instance part="GND12" gate="1" x="114.3" y="-63.5"/>
+<instance part="ZZ5" gate="G$1" x="93.98" y="-50.8"/>
+<instance part="ZZ6" gate="G$1" x="93.98" y="-53.34"/>
+<instance part="C8" gate="G$1" x="111.76" y="-58.42" rot="R90"/>
+<instance part="GND12" gate="1" x="111.76" y="-63.5"/>
 <instance part="GND7" gate="1" x="76.2" y="-78.74"/>
-<instance part="C4" gate="G$1" x="53.34" y="-58.42" rot="R90"/>
-<instance part="GND4" gate="1" x="53.34" y="-66.04"/>
-<instance part="R1" gate="A" x="106.68" y="-48.26"/>
+<instance part="C4" gate="G$1" x="50.8" y="-58.42" rot="R90"/>
+<instance part="GND4" gate="1" x="50.8" y="-66.04"/>
+<instance part="R1" gate="A" x="104.14" y="-48.26"/>
 <instance part="P+8" gate="1" x="114.3" y="-15.24"/>
 <instance part="P+11" gate="1" x="208.28" y="-27.94"/>
 <instance part="U1" gate="A" x="43.18" y="-17.78"/>
@@ -4245,7 +4245,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="ZZ16" gate="G$1" x="187.96" y="-142.24" rot="R180"/>
 <instance part="ZZ17" gate="G$1" x="203.2" y="-142.24"/>
 <instance part="P+1" gate="1" x="12.7" y="-10.16"/>
-<instance part="P+5" gate="1" x="53.34" y="-43.18"/>
+<instance part="P+5" gate="1" x="50.8" y="-43.18"/>
 <instance part="LED3" gate="G$1" x="134.62" y="-134.62" rot="R270"/>
 <instance part="LED4" gate="G$1" x="134.62" y="-142.24" rot="R270"/>
 <instance part="ZZ21" gate="G$1" x="35.56" y="-149.86"/>
@@ -4324,7 +4324,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="114.3" y1="-58.42" x2="114.3" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-58.42" x2="111.76" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4335,14 +4335,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="GND"/>
-<wire x1="63.5" y1="-50.8" x2="60.96" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-50.8" x2="60.96" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="-60.96" x2="53.34" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-50.8" x2="58.42" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-50.8" x2="58.42" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-60.96" x2="50.8" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="53.34" y1="-60.96" x2="53.34" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-60.96" x2="53.34" y2="-63.5" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-60.96" x2="50.8" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-60.96" x2="50.8" y2="-63.5" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-<junction x="53.34" y="-60.96"/>
+<junction x="50.8" y="-60.96"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="-17.78" x2="20.32" y2="-17.78" width="0.1524" layer="91"/>
@@ -4446,47 +4446,47 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<wire x1="114.3" y1="-48.26" x2="114.3" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="-48.26" x2="111.76" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="R1" gate="A" pin="2"/>
 <pinref part="U3" gate="A" pin="AREF"/>
-<wire x1="111.76" y1="-48.26" x2="114.3" y2="-48.26" width="0.1524" layer="91"/>
-<junction x="114.3" y="-48.26"/>
-<wire x1="114.3" y1="-48.26" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="-48.26" x2="111.76" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="111.76" y="-48.26"/>
+<wire x1="111.76" y1="-48.26" x2="142.24" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="NC1"/>
-<wire x1="93.98" y1="-50.8" x2="96.52" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-50.8" x2="93.98" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="NC2"/>
-<wire x1="93.98" y1="-53.34" x2="96.52" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-53.34" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FOREARM_LED" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB0"/>
-<wire x1="142.24" y1="-53.34" x2="127" y2="-53.34" width="0.1524" layer="91"/>
-<label x="129.54" y="-53.34" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="PB0(D8)"/>
+<wire x1="142.24" y1="-53.34" x2="119.38" y2="-53.34" width="0.1524" layer="91"/>
+<label x="121.92" y="-53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ELBOW_PWM" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB1"/>
-<wire x1="142.24" y1="-55.88" x2="127" y2="-55.88" width="0.1524" layer="91"/>
-<label x="129.54" y="-55.88" size="1.778" layer="95"/>
-<label x="129.54" y="-55.88" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="PB1(D9)"/>
+<wire x1="142.24" y1="-55.88" x2="119.38" y2="-55.88" width="0.1524" layer="91"/>
+<label x="121.92" y="-55.88" size="1.778" layer="95"/>
+<label x="121.92" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WRIST_PWM" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB2"/>
-<wire x1="142.24" y1="-58.42" x2="127" y2="-58.42" width="0.1524" layer="91"/>
-<label x="129.54" y="-58.42" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="PB2(D10)"/>
+<wire x1="142.24" y1="-58.42" x2="119.38" y2="-58.42" width="0.1524" layer="91"/>
+<label x="121.92" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11/MOSI" class="0">
@@ -4530,7 +4530,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="U2" gate="A" pin="VOUT"/>
 <pinref part="R1" gate="A" pin="1"/>
-<wire x1="93.98" y1="-48.26" x2="101.6" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-48.26" x2="99.06" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -4631,62 +4631,62 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="ENCODER_A" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD2"/>
-<wire x1="185.42" y1="-55.88" x2="200.66" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD2(D2)"/>
+<wire x1="185.42" y1="-55.88" x2="210.82" y2="-55.88" width="0.1524" layer="91"/>
 <label x="187.96" y="-55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIR" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD3"/>
-<wire x1="185.42" y1="-58.42" x2="200.66" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD3(D3)"/>
+<wire x1="185.42" y1="-58.42" x2="210.82" y2="-58.42" width="0.1524" layer="91"/>
 <label x="187.96" y="-58.42" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D4" class="0">
+<net name="STEP" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD4"/>
-<wire x1="185.42" y1="-60.96" x2="200.66" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD4(D4)"/>
+<wire x1="185.42" y1="-60.96" x2="210.82" y2="-60.96" width="0.1524" layer="91"/>
 <label x="187.96" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D6" class="0">
+<net name="SHOULDER_PWM2" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD6"/>
-<wire x1="185.42" y1="-66.04" x2="200.66" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD6(D6)"/>
+<wire x1="185.42" y1="-66.04" x2="210.82" y2="-66.04" width="0.1524" layer="91"/>
 <label x="187.96" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D7" class="0">
+<net name="UPPER_LED" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD7"/>
-<wire x1="185.42" y1="-68.58" x2="200.66" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD7(D7)"/>
+<wire x1="185.42" y1="-68.58" x2="210.82" y2="-68.58" width="0.1524" layer="91"/>
 <label x="187.96" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD1"/>
-<wire x1="185.42" y1="-53.34" x2="205.74" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-53.34" x2="205.74" y2="-68.58" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="-68.58" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD1(TX)"/>
+<wire x1="185.42" y1="-53.34" x2="213.36" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-53.34" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="-68.58" x2="220.98" y2="-68.58" width="0.1524" layer="91"/>
 <pinref part="RN2" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD0"/>
-<wire x1="185.42" y1="-50.8" x2="208.28" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-50.8" x2="208.28" y2="-60.96" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="-60.96" x2="213.36" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD0(RX)"/>
+<wire x1="185.42" y1="-50.8" x2="215.9" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-50.8" x2="215.9" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="-60.96" x2="220.98" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="RN2" gate="B" pin="1"/>
 </segment>
 </net>
 <net name="RX" class="0">
 <segment>
 <pinref part="RN2" gate="B" pin="2"/>
-<wire x1="223.52" y1="-60.96" x2="238.76" y2="-60.96" width="0.1524" layer="91"/>
-<label x="226.06" y="-60.96" size="1.778" layer="95"/>
+<wire x1="231.14" y1="-60.96" x2="238.76" y2="-60.96" width="0.1524" layer="91"/>
+<label x="233.68" y="-60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="1" pin="TXD"/>
@@ -4697,8 +4697,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="TX" class="0">
 <segment>
 <pinref part="RN2" gate="C" pin="2"/>
-<wire x1="223.52" y1="-68.58" x2="238.76" y2="-68.58" width="0.1524" layer="91"/>
-<label x="226.06" y="-68.58" size="1.778" layer="95"/>
+<wire x1="231.14" y1="-68.58" x2="238.76" y2="-68.58" width="0.1524" layer="91"/>
+<label x="233.68" y="-68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="1" pin="RXD"/>
@@ -4706,52 +4706,52 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <label x="124.46" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A0" class="0">
+<net name="D-AUX" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC0(ADC0)"/>
 <wire x1="185.42" y1="-30.48" x2="200.66" y2="-30.48" width="0.1524" layer="91"/>
 <label x="187.96" y="-30.48" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A1" class="0">
+<net name="HALL_SIGNAL" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC1(ADC1)"/>
 <wire x1="185.42" y1="-33.02" x2="200.66" y2="-33.02" width="0.1524" layer="91"/>
 <label x="187.96" y="-33.02" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A2" class="0">
+<net name="ENABLE" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC2(ADC2)"/>
 <wire x1="185.42" y1="-35.56" x2="200.66" y2="-35.56" width="0.1524" layer="91"/>
 <label x="187.96" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A3" class="0">
+<net name="BUTTON" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC3(ADC3)"/>
 <wire x1="185.42" y1="-38.1" x2="200.66" y2="-38.1" width="0.1524" layer="91"/>
 <label x="187.96" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A4" class="0">
+<net name="ENCODER_SW" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC4(ADC4)"/>
 <wire x1="185.42" y1="-40.64" x2="200.66" y2="-40.64" width="0.1524" layer="91"/>
 <label x="187.96" y="-40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A5" class="0">
+<net name="ENCODER_B" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC5(ADC5)"/>
 <wire x1="185.42" y1="-43.18" x2="200.66" y2="-43.18" width="0.1524" layer="91"/>
 <label x="187.96" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="D5" class="0">
+<net name="SHOULDER_PWM1" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PD5"/>
-<wire x1="185.42" y1="-63.5" x2="200.66" y2="-63.5" width="0.1524" layer="91"/>
+<pinref part="U3" gate="A" pin="PD5(D5)"/>
+<wire x1="185.42" y1="-63.5" x2="210.82" y2="-63.5" width="0.1524" layer="91"/>
 <label x="187.96" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -4909,11 +4909,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 <segment>
 <pinref part="U2" gate="A" pin="VIN"/>
-<wire x1="63.5" y1="-48.26" x2="53.34" y2="-48.26" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="-48.26" x2="53.34" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="-48.26" x2="50.8" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-48.26" x2="50.8" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="-48.26" x2="53.34" y2="-45.72" width="0.1524" layer="91"/>
-<junction x="53.34" y="-48.26"/>
+<wire x1="50.8" y1="-48.26" x2="50.8" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="50.8" y="-48.26"/>
 <pinref part="P+5" gate="1" pin="+12V"/>
 </segment>
 </net>
@@ -4933,28 +4933,28 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="STAT" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB5"/>
+<pinref part="U3" gate="A" pin="PB5(D13)"/>
 <wire x1="142.24" y1="-66.04" x2="119.38" y2="-66.04" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="A" pin="2"/>
 <wire x1="119.38" y1="-71.12" x2="104.14" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="-66.04" x2="119.38" y2="-71.12" width="0.1524" layer="91"/>
-<label x="129.54" y="-66.04" size="1.778" layer="95"/>
+<label x="121.92" y="-66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GRIP_PWM" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB3"/>
-<wire x1="142.24" y1="-60.96" x2="127" y2="-60.96" width="0.1524" layer="91"/>
-<label x="129.54" y="-60.96" size="1.778" layer="95"/>
-<label x="129.54" y="-60.96" size="1.778" layer="95"/>
-<label x="129.54" y="-60.96" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="PB3(D11)"/>
+<wire x1="142.24" y1="-60.96" x2="119.38" y2="-60.96" width="0.1524" layer="91"/>
+<label x="121.92" y="-60.96" size="1.778" layer="95"/>
+<label x="121.92" y="-60.96" size="1.778" layer="95"/>
+<label x="121.92" y="-60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GRIP_LED" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="PB4"/>
-<wire x1="142.24" y1="-63.5" x2="127" y2="-63.5" width="0.1524" layer="91"/>
-<label x="129.54" y="-63.5" size="1.778" layer="95"/>
+<pinref part="U3" gate="A" pin="PB4(D12)"/>
+<wire x1="142.24" y1="-63.5" x2="119.38" y2="-63.5" width="0.1524" layer="91"/>
+<label x="121.92" y="-63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -4965,10 +4965,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="165.354" y="-166.37" size="2.54" layer="94">CONTROLLER</text>
 <text x="187.96" y="-175.26" size="2.54" layer="94">0002</text>
 <text x="223.52" y="-175.26" size="2.54" layer="94">A</text>
-<text x="241.3" y="-175.26" size="2.54" layer="94">1.0</text>
+<text x="241.3" y="-175.26" size="2.54" layer="94">1.1</text>
 <text x="5.08" y="-177.8" size="1.778" layer="95">MICROSTEPPING CONFIGURABLE 
-WITH R_, R_ AND R_: SEE DATASHEET</text>
-<text x="7.62" y="-104.14" size="1.778" layer="95">POPULATE R17 TO ENABLE
+WITH R7, R8 AND R9: SEE DATASHEET</text>
+<text x="7.62" y="-104.14" size="1.778" layer="95">POPULATE R2 TO ENABLE
 MIXED DECAY MODE</text>
 <text x="73.66" y="-10.16" size="2.54" layer="94">+5V HIGH POWER SWITCHER</text>
 <text x="58.42" y="-177.8" size="2.54" layer="94">STEPPER CONTROLLER</text>
@@ -4977,7 +4977,7 @@ MIXED DECAY MODE</text>
 <text x="152.4" y="-20.32" size="2.54" layer="94">BREAKOUT
 CONNECTOR</text>
 <text x="106.68" y="-177.8" size="1.778" layer="95">ItripMAX ADJUSTABLE
-USING R_: 0 - 4.17A</text>
+USING R17: 0 - 4.17A</text>
 <text x="99.06" y="-78.74" size="1.778" layer="95">OPAMP GAIN: 31
 RESOLUTION: 3mA 
 RANGE: 0-3.23A</text>
@@ -5650,11 +5650,12 @@ RANGE: 0-3.23A</text>
 <label x="190.5" y="-38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="AUX" class="0">
+<net name="A-AUX" class="0">
 <segment>
 <pinref part="J4" gate="A" pin="13"/>
 <wire x1="215.9" y1="-45.72" x2="187.96" y2="-45.72" width="0.1524" layer="91"/>
 <label x="190.5" y="-45.72" size="1.778" layer="95"/>
+<wire x1="215.9" y1="-45.72" x2="187.96" y2="-45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STEP" class="0">
@@ -5785,7 +5786,7 @@ RANGE: 0-3.23A</text>
 <wire x1="20.32" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="STAT" class="0">
+<net name="D-AUX" class="0">
 <segment>
 <pinref part="J4" gate="A" pin="14"/>
 <wire x1="215.9" y1="-48.26" x2="187.96" y2="-48.26" width="0.1524" layer="91"/>

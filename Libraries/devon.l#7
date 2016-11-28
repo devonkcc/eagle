@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -519,6 +519,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.778" y1="0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -1581,8 +1583,8 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <text x="-1.27" y="-7.62" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="SREW_TERMINAL_2_POS">
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.9304"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.9304" shape="square"/>
+<pad name="1" x="2.54" y="0" drill="1.1" diameter="1.9304"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="1.9304" shape="square"/>
 <wire x1="-1.524" y1="3.302" x2="-1.524" y2="-3.302" width="0.127" layer="39"/>
 <wire x1="-1.524" y1="-3.302" x2="4.064" y2="-3.302" width="0.127" layer="39"/>
 <wire x1="4.064" y1="-3.302" x2="4.064" y2="3.302" width="0.127" layer="39"/>
@@ -1849,7 +1851,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <package name="RASM722PX">
 <description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
 Source: DCJ0202.pdf</description>
-<hole x="0" y="0" drill="1.778"/>
 <smd name="SLEEVE" x="-6.4262" y="3.7592" dx="3.81" dy="6.35" layer="1"/>
 <smd name="SHUNT" x="6.858" y="3.7592" dx="3.302" dy="6.35" layer="1"/>
 <smd name="PIN" x="0.762" y="12.9032" dx="3.302" dy="4.064" layer="1"/>
@@ -2252,8 +2253,6 @@ Source: DCJ0202.pdf</description>
 <pad name="GND_2" x="2.5" y="3.5" drill="1"/>
 <pad name="A" x="-2.5" y="-3.5" drill="1"/>
 <pad name="B" x="2.5" y="-3.5" drill="1"/>
-<hole x="-5.6" y="0" drill="2.8"/>
-<hole x="5.6" y="0" drill="2.8"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <text x="-4.5" y="5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
 <text x="-4.5" y="-6.5" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
@@ -2263,6 +2262,7 @@ Source: DCJ0202.pdf</description>
 <wire x1="4.5" y1="-1.5" x2="4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-3.5" x2="-4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="-3.5" x2="-4.5" y2="-1.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
 </package>
 <package name="PANASONIC_P2W_POT">
 <text x="-1.5" y="2.5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
@@ -2516,9 +2516,9 @@ Source: DCJ0202.pdf</description>
 <text x="-0.635" y="-3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="SOT-223">
-<smd name="1" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="2" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="3" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="G" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="D" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="S" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
 <wire x1="-1.8796" y1="-1.8542" x2="-2.7432" y2="-1.8542" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-1.8542" x2="-2.7432" y2="-3.6576" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-3.6576" width="0.1524" layer="51"/>
@@ -2776,6 +2776,17 @@ Source: DCJ0202.pdf</description>
 <wire x1="-2.6924" y1="-1.3462" x2="-2.9464" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-2.9464" y1="-1.3462" x2="-2.6924" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
 </package>
+<package name="C&amp;K_SA2M_SA1M">
+<smd name="FRONT" x="0" y="6.475" dx="5.33" dy="2.79" layer="1"/>
+<smd name="SIDE1" x="-3.65" y="2.525" dx="1.46" dy="4.19" layer="1"/>
+<smd name="1" x="-1.8725" y="1.88" dx="1.205" dy="3.76" layer="1"/>
+<smd name="2" x="1.8725" y="1.88" dx="1.205" dy="3.76" layer="1"/>
+<smd name="SIDE2" x="3.65" y="2.525" dx="1.46" dy="4.19" layer="1"/>
+<wire x1="-3.15" y1="5.2" x2="3.15" y2="5.2" width="0.127" layer="51"/>
+<wire x1="-3.15" y1="5.2" x2="-3.15" y2="0" width="0.127" layer="51"/>
+<wire x1="-3.15" y1="0" x2="3.15" y2="0" width="0.127" layer="51"/>
+<wire x1="3.15" y1="0" x2="3.15" y2="5.2" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A_ARDUINO_NANO">
@@ -2852,7 +2863,7 @@ Source: DCJ0202.pdf</description>
 <text x="0" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-8.128" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="S_BUTTON_TACTILE_PTS645">
+<symbol name="S_BUTTON_TACTILE_DUAL_CHANNEL">
 <pin name="1" x="-7.62" y="2.54" visible="off" length="middle"/>
 <wire x1="0" y1="1.778" x2="2.54" y2="1.778" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.778" x2="5.08" y2="1.778" width="0.254" layer="94"/>
@@ -3433,16 +3444,18 @@ DEVONCOPELAND.CA</text>
 <text x="11.43" y="-5.08" size="1.778" layer="96" ratio="10" rot="SR0">&gt;Value</text>
 <text x="11.43" y="0.635" size="1.778" layer="95" ratio="10" rot="SR0">&gt;Name</text>
 </symbol>
-<symbol name="FDV303N">
-<pin name="G" x="0" y="0" direction="pas"/>
-<pin name="S" x="45.72" y="-2.54" direction="pas" rot="R180"/>
-<pin name="D" x="45.72" y="0" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="38.1" y2="-7.62" width="0.1524" layer="94"/>
-<wire x1="38.1" y1="-7.62" x2="38.1" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="38.1" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
-<text x="18.1356" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
-<text x="17.5006" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
+<symbol name="S_BUTTON_TACTILE_SINGLE_CHANNEL">
+<pin name="1" x="-7.62" y="0" visible="off" length="middle"/>
+<wire x1="0" y1="1.778" x2="2.54" y2="1.778" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="5.08" y2="1.778" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="2.54" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.048" x2="3.81" y2="3.048" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.842" y2="0" width="0.254" layer="94"/>
+<pin name="2" x="12.7" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-2.54" y="4.318" size="1.27" layer="95" ratio="6">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4258,7 +4271,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </deviceset>
 <deviceset name="S_BUTTON_TACTILE_PTS645" prefix="S">
 <gates>
-<gate name="G$1" symbol="S_BUTTON_TACTILE_PTS645" x="7.62" y="-2.54"/>
+<gate name="G$1" symbol="S_BUTTON_TACTILE_DUAL_CHANNEL" x="7.62" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="PTS645-SMD">
@@ -4645,9 +4658,9 @@ LETTER landscape</description>
 <devices>
 <device name="" package="SOT-223">
 <connects>
-<connect gate="A" pin="DRAIN" pad="2"/>
-<connect gate="A" pin="GATE" pad="1"/>
-<connect gate="A" pin="SOURCE" pad="3"/>
+<connect gate="A" pin="DRAIN" pad="D"/>
+<connect gate="A" pin="GATE" pad="G"/>
+<connect gate="A" pin="SOURCE" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>

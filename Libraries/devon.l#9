@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -519,6 +519,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.778" y1="0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -1581,8 +1583,8 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <text x="-1.27" y="-7.62" size="1.27" layer="21">&gt;VALUE</text>
 </package>
 <package name="SREW_TERMINAL_2_POS">
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.9304"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.9304" shape="square"/>
+<pad name="1" x="2.54" y="0" drill="1.1" diameter="1.9304"/>
+<pad name="2" x="0" y="0" drill="1.1" diameter="1.9304" shape="square"/>
 <wire x1="-1.524" y1="3.302" x2="-1.524" y2="-3.302" width="0.127" layer="39"/>
 <wire x1="-1.524" y1="-3.302" x2="4.064" y2="-3.302" width="0.127" layer="39"/>
 <wire x1="4.064" y1="-3.302" x2="4.064" y2="3.302" width="0.127" layer="39"/>
@@ -1849,7 +1851,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <package name="RASM722PX">
 <description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
 Source: DCJ0202.pdf</description>
-<hole x="0" y="0" drill="1.778"/>
 <smd name="SLEEVE" x="-6.4262" y="3.7592" dx="3.81" dy="6.35" layer="1"/>
 <smd name="SHUNT" x="6.858" y="3.7592" dx="3.302" dy="6.35" layer="1"/>
 <smd name="PIN" x="0.762" y="12.9032" dx="3.302" dy="4.064" layer="1"/>
@@ -2252,8 +2253,6 @@ Source: DCJ0202.pdf</description>
 <pad name="GND_2" x="2.5" y="3.5" drill="1"/>
 <pad name="A" x="-2.5" y="-3.5" drill="1"/>
 <pad name="B" x="2.5" y="-3.5" drill="1"/>
-<hole x="-5.6" y="0" drill="2.8"/>
-<hole x="5.6" y="0" drill="2.8"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <text x="-4.5" y="5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
 <text x="-4.5" y="-6.5" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
@@ -2263,6 +2262,7 @@ Source: DCJ0202.pdf</description>
 <wire x1="4.5" y1="-1.5" x2="4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-3.5" x2="-4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="-3.5" x2="-4.5" y2="-1.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
 </package>
 <package name="PANASONIC_P2W_POT">
 <text x="-1.5" y="2.5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
@@ -2516,9 +2516,9 @@ Source: DCJ0202.pdf</description>
 <text x="-0.635" y="-3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="SOT-223">
-<smd name="1" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="2" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="3" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="G" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="D" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="S" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
 <wire x1="-1.8796" y1="-1.8542" x2="-2.7432" y2="-1.8542" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-1.8542" x2="-2.7432" y2="-3.6576" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-3.6576" width="0.1524" layer="51"/>
@@ -2686,6 +2686,96 @@ Source: DCJ0202.pdf</description>
 <wire x1="-2.9" y1="5.1" x2="-5.1" y2="2.9" width="0.127" layer="21"/>
 <wire x1="2.9" y1="5.1" x2="5.1" y2="2.9" width="0.127" layer="21"/>
 </package>
+<package name="SOT-23-3L">
+<smd name="G" x="-0.95" y="-1.2446" dx="0.6604" dy="0.9144" layer="1"/>
+<smd name="S" x="0.95" y="-1.2446" dx="0.6604" dy="0.9144" layer="1"/>
+<smd name="D" x="0" y="1.2446" dx="0.6604" dy="0.9144" layer="1"/>
+<wire x1="-0.635" y1="-0.7366" x2="-1.2446" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-1.3462" x2="-0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-1.3462" x2="-0.635" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-0.7366" x2="0.635" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-1.3462" x2="1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-1.3462" x2="1.2446" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.7366" x2="0.3048" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="0.762" x2="0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.3462" x2="-0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="1.3462" x2="-0.3048" y2="0.7366" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="-0.762" x2="1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="-0.762" x2="1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="0.762" x2="-1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="0.762" x2="-1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.1684" y1="-0.508" x2="-1.4224" y2="-0.508" width="0" layer="51" curve="-180"/>
+<wire x1="-1.4224" y1="-0.508" x2="-1.1684" y2="-0.4826" width="0" layer="51" curve="-180"/>
+<wire x1="-0.6604" y1="0.8636" x2="-1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-0.2794" y1="-0.8636" x2="0.2794" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="-0.8636" x2="1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="0.8636" x2="0.6604" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-1.6764" y1="0.8636" x2="-1.6764" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-1.3462" x2="-2.9464" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.9464" y1="-1.3462" x2="-2.6924" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+</package>
+<package name="SOT-23-3L-M">
+<smd name="1" x="-0.95" y="-1.2954" dx="0.7112" dy="1.2192" layer="1"/>
+<smd name="2" x="0.95" y="-1.2954" dx="0.7112" dy="1.2192" layer="1"/>
+<smd name="3" x="0" y="1.2954" dx="0.7112" dy="1.2192" layer="1"/>
+<wire x1="-0.635" y1="-0.7366" x2="-1.2446" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-1.3462" x2="-0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-1.3462" x2="-0.635" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-0.7366" x2="0.635" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-1.3462" x2="1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-1.3462" x2="1.2446" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.7366" x2="0.3048" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="0.762" x2="0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.3462" x2="-0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="1.3462" x2="-0.3048" y2="0.7366" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="-0.762" x2="1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="-0.762" x2="1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="0.762" x2="-1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="0.762" x2="-1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.1684" y1="-0.508" x2="-1.4224" y2="-0.508" width="0" layer="51" curve="-180"/>
+<wire x1="-1.4224" y1="-0.508" x2="-1.1684" y2="-0.4826" width="0" layer="51" curve="-180"/>
+<wire x1="-0.6858" y1="0.8636" x2="-1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-0.254" y1="-0.8636" x2="0.254" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="-0.8636" x2="1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="0.8636" x2="0.6858" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-1.6764" y1="0.8636" x2="-1.6764" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-1.3462" x2="-2.9464" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.9464" y1="-1.3462" x2="-2.6924" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+</package>
+<package name="SOT-23-3L-L">
+<smd name="1" x="-0.95" y="-1.1938" dx="0.6096" dy="0.6096" layer="1"/>
+<smd name="2" x="0.95" y="-1.1938" dx="0.6096" dy="0.6096" layer="1"/>
+<smd name="3" x="0" y="1.1938" dx="0.6096" dy="0.6096" layer="1"/>
+<wire x1="-0.635" y1="-0.7366" x2="-1.2446" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-0.762" x2="-1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-1.2446" y1="-1.3462" x2="-0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.635" y1="-1.3462" x2="-0.635" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-0.7366" x2="0.635" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-0.762" x2="0.635" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="0.635" y1="-1.3462" x2="1.2446" y2="-1.3462" width="0.1524" layer="51"/>
+<wire x1="1.2446" y1="-1.3462" x2="1.2446" y2="-0.7366" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="0.7366" x2="0.3048" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="0.762" x2="0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="0.3048" y1="1.3462" x2="-0.3048" y2="1.3462" width="0.1524" layer="51"/>
+<wire x1="-0.3048" y1="1.3462" x2="-0.3048" y2="0.7366" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="-0.762" x2="1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="-0.762" x2="1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="1.5748" y1="0.762" x2="-1.5748" y2="0.762" width="0.1524" layer="51"/>
+<wire x1="-1.5748" y1="0.762" x2="-1.5748" y2="-0.762" width="0.1524" layer="51"/>
+<wire x1="-1.1684" y1="-0.508" x2="-1.4224" y2="-0.508" width="0" layer="51" curve="-180"/>
+<wire x1="-1.4224" y1="-0.508" x2="-1.1684" y2="-0.4826" width="0" layer="51" curve="-180"/>
+<wire x1="-0.635" y1="0.8636" x2="-1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="-0.8636" x2="0.3048" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="-0.8636" x2="1.6764" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="1.6764" y1="0.8636" x2="0.635" y2="0.8636" width="0.1524" layer="21"/>
+<wire x1="-1.6764" y1="0.8636" x2="-1.6764" y2="-0.8636" width="0.1524" layer="21"/>
+<wire x1="-2.6924" y1="-1.3462" x2="-2.9464" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+<wire x1="-2.9464" y1="-1.3462" x2="-2.6924" y2="-1.3462" width="0.1524" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A_ARDUINO_NANO">
@@ -2762,7 +2852,7 @@ Source: DCJ0202.pdf</description>
 <text x="0" y="3.81" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-8.128" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="S_BUTTON_TACTILE_PTS645">
+<symbol name="S_BUTTON_TACTILE_DUAL_CHANNEL">
 <pin name="1" x="-7.62" y="2.54" visible="off" length="middle"/>
 <wire x1="0" y1="1.778" x2="2.54" y2="1.778" width="0.254" layer="94"/>
 <wire x1="2.54" y1="1.778" x2="5.08" y2="1.778" width="0.254" layer="94"/>
@@ -3296,9 +3386,9 @@ DEVONCOPELAND.CA</text>
 <wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="Q_MOSFET">
-<pin name="2" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="3" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="DRAIN" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="SOURCE" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="GATE" x="0" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="2.54" y1="0" x2="4.445" y2="0" width="0.2032" layer="94"/>
 <wire x1="4.445" y1="-2.54" x2="4.445" y2="2.54" width="0.2032" layer="94"/>
 <wire x1="5.08" y1="-0.635" x2="5.08" y2="0.635" width="0.2032" layer="94"/>
@@ -3342,6 +3432,19 @@ DEVONCOPELAND.CA</text>
 </polygon>
 <text x="11.43" y="-5.08" size="1.778" layer="96" ratio="10" rot="SR0">&gt;Value</text>
 <text x="11.43" y="0.635" size="1.778" layer="95" ratio="10" rot="SR0">&gt;Name</text>
+</symbol>
+<symbol name="S_BUTTON_TACTILE_SINGLE_CHANNEL">
+<pin name="1" x="-7.62" y="0" visible="off" length="middle"/>
+<wire x1="0" y1="1.778" x2="2.54" y2="1.778" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="5.08" y2="1.778" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.778" x2="2.54" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.048" x2="3.81" y2="3.048" width="0.254" layer="94"/>
+<circle x="5.08" y="0" radius="0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.842" y2="0" width="0.254" layer="94"/>
+<pin name="3" x="12.7" y="0" visible="off" length="middle" rot="R180"/>
+<text x="-2.54" y="4.318" size="1.27" layer="95" ratio="6">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4157,7 +4260,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </deviceset>
 <deviceset name="S_BUTTON_TACTILE_PTS645" prefix="S">
 <gates>
-<gate name="G$1" symbol="S_BUTTON_TACTILE_PTS645" x="7.62" y="-2.54"/>
+<gate name="G$1" symbol="S_BUTTON_TACTILE_DUAL_CHANNEL" x="7.62" y="-2.54"/>
 </gates>
 <devices>
 <device name="" package="PTS645-SMD">
@@ -4544,9 +4647,9 @@ LETTER landscape</description>
 <devices>
 <device name="" package="SOT-223">
 <connects>
-<connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="2" pad="2"/>
-<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="DRAIN" pad="D"/>
+<connect gate="A" pin="GATE" pad="G"/>
+<connect gate="A" pin="SOURCE" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4565,9 +4668,27 @@ LETTER landscape</description>
 <connect gate="A" pin="-" pad="-"/>
 </connects>
 <technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="Q_MOSFET_FDV303N" prefix="Q">
+<gates>
+<gate name="A" symbol="Q_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT-23-3L">
+<connects>
+<connect gate="A" pin="DRAIN" pad="S"/>
+<connect gate="A" pin="GATE" pad="G"/>
+<connect gate="A" pin="SOURCE" pad="D"/>
+</connects>
+<technologies>
 <technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="16SVPF1000M" constant="no"/>
-<attribute name="VENDOR" value="PANASONIC" constant="no"/>
+<attribute name="COPYRIGHT" value="Copyright C 2015 Accelerated Designs. All rights reserved" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="FDV303N" constant="no"/>
+<attribute name="VENDOR" value="Fairchild Semiconductor" constant="no"/>
 </technology>
 </technologies>
 </device>

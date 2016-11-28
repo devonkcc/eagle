@@ -442,6 +442,8 @@
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.778" y1="0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
 </package>
 <package name="C1005">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
@@ -1884,7 +1886,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <package name="RASM722PX">
 <description>&lt;b&gt;DC POWER JACK&lt;/b&gt;&lt;p&gt;
 Source: DCJ0202.pdf</description>
-<hole x="0" y="0" drill="1.778"/>
 <smd name="SLEEVE" x="-6.4262" y="3.7592" dx="3.81" dy="6.35" layer="1"/>
 <smd name="SHUNT" x="6.858" y="3.7592" dx="3.302" dy="6.35" layer="1"/>
 <smd name="PIN" x="0.762" y="12.9032" dx="3.302" dy="4.064" layer="1"/>
@@ -2104,8 +2105,6 @@ Source: DCJ0202.pdf</description>
 <pad name="GND_2" x="2.5" y="3.5" drill="1"/>
 <pad name="A" x="-2.5" y="-3.5" drill="1"/>
 <pad name="B" x="2.5" y="-3.5" drill="1"/>
-<hole x="-5.6" y="0" drill="2.8"/>
-<hole x="5.6" y="0" drill="2.8"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <text x="-4.5" y="5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
 <text x="-4.5" y="-6.5" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
@@ -2115,6 +2114,7 @@ Source: DCJ0202.pdf</description>
 <wire x1="4.5" y1="-1.5" x2="4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="4.5" y1="-3.5" x2="-4.5" y2="-3.5" width="0.127" layer="51"/>
 <wire x1="-4.5" y1="-3.5" x2="-4.5" y2="-1.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
 </package>
 <package name="PANASONIC_P2W_POT">
 <text x="-1.5" y="2.5" size="1.27" layer="51" ratio="10">&gt;NAME</text>
@@ -4194,9 +4194,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="S1" gate="G$1" x="223.52" y="-45.72"/>
 <instance part="C10" gate="G$1" x="124.46" y="-30.48" rot="R90"/>
 <instance part="C7" gate="G$1" x="114.3" y="-30.48" rot="R90"/>
-<instance part="RN2" gate="A" x="213.36" y="-35.56" rot="R90"/>
+<instance part="RN2" gate="A" x="226.06" y="-68.58"/>
 <instance part="RN2" gate="B" x="226.06" y="-60.96"/>
-<instance part="RN2" gate="C" x="226.06" y="-68.58"/>
+<instance part="RN2" gate="C" x="213.36" y="-35.56" rot="R90"/>
 <instance part="RN2" gate="D" x="195.58" y="-142.24"/>
 <instance part="LED2" gate="G$1" x="86.36" y="-71.12" rot="R270"/>
 <instance part="Y1" gate="G$1" x="119.38" y="-81.28"/>
@@ -4272,18 +4272,17 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <net name="RESET" class="0">
 <segment>
 <pinref part="U3" gate="A" pin="PC6(RESET)"/>
-<pinref part="RN2" gate="A" pin="1"/>
 <wire x1="185.42" y1="-45.72" x2="213.36" y2="-45.72" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-45.72" x2="213.36" y2="-43.18" width="0.1524" layer="91"/>
 <label x="187.96" y="-45.72" size="1.778" layer="95"/>
 <pinref part="S1" gate="G$1" pin="1"/>
-<wire x1="213.36" y1="-43.18" x2="213.36" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="-43.18" x2="213.36" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-45.72" x2="213.36" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <wire x1="213.36" y1="-48.26" x2="215.9" y2="-48.26" width="0.1524" layer="91"/>
 <junction x="213.36" y="-45.72"/>
-<junction x="213.36" y="-43.18"/>
+<pinref part="RN2" gate="C" pin="1"/>
+<wire x1="213.36" y1="-40.64" x2="213.36" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="5"/>
@@ -4538,11 +4537,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="RN2" gate="A" pin="2"/>
-<wire x1="213.36" y1="-30.48" x2="213.36" y2="-27.94" width="0.1524" layer="91"/>
-<pinref part="P+11" gate="1" pin="+5V"/>
-</segment>
-<segment>
 <pinref part="U1" gate="A" pin="VOUT"/>
 <wire x1="53.34" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="P+7" gate="1" pin="+5V"/>
@@ -4610,6 +4604,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <junction x="124.46" y="-20.32"/>
 <junction x="114.3" y="-20.32"/>
 </segment>
+<segment>
+<pinref part="P+11" gate="1" pin="+5V"/>
+<pinref part="RN2" gate="C" pin="2"/>
+<wire x1="213.36" y1="-27.94" x2="213.36" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="ENCODER_A" class="0">
 <segment>
@@ -4651,8 +4650,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="U3" gate="A" pin="PD1(TX)"/>
 <wire x1="185.42" y1="-53.34" x2="213.36" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-53.34" x2="213.36" y2="-68.58" width="0.1524" layer="91"/>
+<pinref part="RN2" gate="A" pin="1"/>
 <wire x1="213.36" y1="-68.58" x2="220.98" y2="-68.58" width="0.1524" layer="91"/>
-<pinref part="RN2" gate="C" pin="1"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -4678,14 +4677,14 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </net>
 <net name="TX" class="0">
 <segment>
-<pinref part="RN2" gate="C" pin="2"/>
-<wire x1="231.14" y1="-68.58" x2="238.76" y2="-68.58" width="0.1524" layer="91"/>
-<label x="233.68" y="-68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="1" pin="RXD"/>
 <wire x1="101.6" y1="-114.3" x2="137.16" y2="-114.3" width="0.1524" layer="91"/>
 <label x="124.46" y="-114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="RN2" gate="A" pin="2"/>
+<wire x1="231.14" y1="-68.58" x2="238.76" y2="-68.58" width="0.1524" layer="91"/>
+<label x="233.68" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="HALL_SIGNAL" class="0">

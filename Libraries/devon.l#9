@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2672,6 +2672,20 @@ Source: DCJ0202.pdf</description>
 <wire x1="-4.4958" y1="-3.6576" x2="-4.7498" y2="-3.6576" width="0.1524" layer="21" curve="-180"/>
 <wire x1="-4.7498" y1="-3.6576" x2="-4.4958" y2="-3.6576" width="0.1524" layer="21" curve="-180"/>
 </package>
+<package name="NPCAP_PXG_JA0">
+<smd name="+" x="0" y="4" dx="1.7" dy="3.4" layer="1"/>
+<smd name="-" x="0" y="-4" dx="1.7" dy="3.4" layer="1"/>
+<wire x1="-3" y1="6.0612" x2="-3" y2="6.8232" width="0.1524" layer="21"/>
+<wire x1="-2.619" y1="6.4168" x2="-3.381" y2="6.4168" width="0.1524" layer="21"/>
+<wire x1="-3" y1="6.0612" x2="-3" y2="6.8232" width="0.1524" layer="51"/>
+<wire x1="-2.619" y1="6.4168" x2="-3.381" y2="6.4168" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="5.15" x2="-5.15" y2="-5.15" width="0.1524" layer="51"/>
+<wire x1="-5.15" y1="-5.15" x2="5.15" y2="-5.15" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="-5.15" x2="5.15" y2="5.15" width="0.1524" layer="51"/>
+<wire x1="5.15" y1="5.15" x2="-5.15" y2="5.15" width="0.1524" layer="51"/>
+<wire x1="-2.9" y1="5.1" x2="-5.1" y2="2.9" width="0.127" layer="21"/>
+<wire x1="2.9" y1="5.1" x2="5.1" y2="2.9" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A_ARDUINO_NANO">
@@ -3151,8 +3165,8 @@ Source: DCJ0202.pdf</description>
 <text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="C_CAPACITOR_ALUMINUM">
-<pin name="22" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="11" x="0" y="0" visible="off" length="short" direction="pas"/>
+<pin name="-" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="+" x="0" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="2.2098" y1="0.635" x2="2.2098" y2="1.905" width="0.2032" layer="94"/>
 <wire x1="4.1148" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="3.4798" y1="-1.905" x2="3.4798" y2="0" width="0.2032" layer="94"/>
@@ -4159,21 +4173,18 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C_CAPACITOR_ALUMINUM_PCAP_SVP_F12" prefix="C">
+<deviceset name="C_1000UF_ALUMINUM_APXG160ARA102MJA0G" prefix="C">
 <gates>
 <gate name="A" symbol="C_CAPACITOR_ALUMINUM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NPCAP_PXG_E61">
+<device name="" package="NPCAP_PXG_JA0">
 <connects>
-<connect gate="A" pin="11" pad="+"/>
-<connect gate="A" pin="22" pad="-"/>
+<connect gate="A" pin="+" pad="+"/>
+<connect gate="A" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="MANUFACTURER_PART_NUMBER" value="16SVPF1000M" constant="no"/>
-<attribute name="VENDOR" value="PANASONIC" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4539,6 +4550,25 @@ LETTER landscape</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="C_100UF_ALUMINUM_APXG160ARA101ME61G" prefix="C">
+<gates>
+<gate name="A" symbol="C_CAPACITOR_ALUMINUM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NPCAP_PXG_E61">
+<connects>
+<connect gate="A" pin="+" pad="+"/>
+<connect gate="A" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANUFACTURER_PART_NUMBER" value="16SVPF1000M" constant="no"/>
+<attribute name="VENDOR" value="PANASONIC" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

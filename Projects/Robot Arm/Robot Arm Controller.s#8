@@ -4199,7 +4199,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <instance part="RN2" gate="D" x="195.58" y="-142.24"/>
 <instance part="LED2" gate="G$1" x="86.36" y="-71.12" rot="R270"/>
 <instance part="Y1" gate="G$1" x="119.38" y="-81.28"/>
-<instance part="RN1" gate="A" x="99.06" y="-71.12"/>
+<instance part="RN1" gate="A" x="99.06" y="-71.12" rot="MR0"/>
 <instance part="RN1" gate="B" x="71.12" y="-17.78"/>
 <instance part="RN1" gate="C" x="121.92" y="-134.62"/>
 <instance part="RN1" gate="D" x="121.92" y="-142.24"/>
@@ -4528,13 +4528,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="121.92" y1="-78.74" x2="119.38" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="RN1" gate="A" pin="1"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="93.98" y1="-71.12" x2="88.9" y2="-71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="U2" gate="A" pin="VOUT"/>
@@ -4554,7 +4547,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="P+7" gate="1" pin="+5V"/>
 <wire x1="60.96" y1="-12.7" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="RN1" gate="B" pin="1"/>
-<wire x1="60.96" y1="-17.78" x2="66.04" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="60.96" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="P+2" gate="1" pin="+5V"/>
@@ -4923,10 +4917,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <segment>
 <pinref part="U3" gate="A" pin="PB5(D13)"/>
 <wire x1="142.24" y1="-66.04" x2="119.38" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="RN1" gate="A" pin="2"/>
-<wire x1="119.38" y1="-71.12" x2="104.14" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="-66.04" x2="119.38" y2="-71.12" width="0.1524" layer="91"/>
 <label x="121.92" y="-66.04" size="1.778" layer="95"/>
+<pinref part="RN1" gate="A" pin="1"/>
+<wire x1="104.14" y1="-71.12" x2="119.38" y2="-71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GRIP_PWM" class="0">
@@ -4968,6 +4962,13 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 </segment>
 </net>
 <net name="N$3" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="RN1" gate="A" pin="2"/>
+<wire x1="88.9" y1="-71.12" x2="93.98" y2="-71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
 <segment>
 <pinref part="RN1" gate="B" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="A"/>

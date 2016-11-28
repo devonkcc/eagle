@@ -2516,9 +2516,9 @@ Source: DCJ0202.pdf</description>
 <text x="-0.635" y="-3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
 <package name="SOT-223">
-<smd name="1" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="2" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
-<smd name="3" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="G" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="D" x="0" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
+<smd name="S" x="2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>
 <wire x1="-1.8796" y1="-1.8542" x2="-2.7432" y2="-1.8542" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-1.8542" x2="-2.7432" y2="-3.6576" width="0.1524" layer="51"/>
 <wire x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-3.6576" width="0.1524" layer="51"/>
@@ -4645,9 +4645,9 @@ LETTER landscape</description>
 <devices>
 <device name="" package="SOT-223">
 <connects>
-<connect gate="A" pin="DRAIN" pad="2"/>
-<connect gate="A" pin="GATE" pad="1"/>
-<connect gate="A" pin="SOURCE" pad="3"/>
+<connect gate="A" pin="DRAIN" pad="D"/>
+<connect gate="A" pin="GATE" pad="G"/>
+<connect gate="A" pin="SOURCE" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>

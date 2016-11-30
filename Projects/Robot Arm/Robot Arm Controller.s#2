@@ -1658,10 +1658,10 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <smd name="5" x="2.25" y="-1.6" dx="2" dy="0.5" layer="1"/>
 <text x="5.08" y="-4.445" size="1.016" layer="25" rot="R90">&gt;NAME</text>
 <text x="-4.445" y="-6.985" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-6.4" y1="-3.85" x2="-4.425" y2="3.85" layer="41"/>
-<rectangle x1="-2.175" y1="-3.85" x2="-0.45" y2="3.85" layer="41"/>
-<rectangle x1="-4.425" y1="-2.925" x2="-2.175" y2="2.925" layer="41"/>
-<rectangle x1="-0.45" y1="-1.85" x2="1.225" y2="1.85" layer="41"/>
+<rectangle x1="-6.4" y1="-3.85" x2="-4.425" y2="3.85" layer="39"/>
+<rectangle x1="-2.175" y1="-3.85" x2="-0.45" y2="3.85" layer="39"/>
+<rectangle x1="-4.425" y1="-2.925" x2="-2.175" y2="2.925" layer="39"/>
+<rectangle x1="-0.45" y1="-1.85" x2="1.225" y2="1.85" layer="39"/>
 </package>
 <package name="UX60-MB-5ST">
 <description>&lt;b&gt;MINI USB Connector HI-SPEED Certified&lt;/b&gt; Metal Shield SMT Type With Positioning Post&lt;p&gt;
@@ -1815,7 +1815,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="5.334" y1="-4.826" x2="5.334" y2="4.826" width="0.1524" layer="51"/>
 <wire x1="5.334" y1="4.826" x2="-5.334" y2="4.826" width="0.1524" layer="51"/>
 <wire x1="-5.334" y1="4.826" x2="-5.334" y2="-4.826" width="0.1524" layer="51"/>
-<text x="-3.9878" y="-5.207" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <wire x1="-3.8608" y1="-5.5118" x2="-3.8608" y2="-7.5438" width="0.1524" layer="21"/>
 <wire x1="-2.159" y1="-5.5118" x2="-2.159" y2="-7.5438" width="0.1524" layer="21"/>
 <wire x1="-0.4572" y1="-5.5118" x2="-0.4572" y2="-7.5438" width="0.1524" layer="21"/>
@@ -1826,7 +1825,6 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="0.4572" y1="-5.5118" x2="0.4572" y2="-7.5438" width="0.1524" layer="21"/>
 <wire x1="2.159" y1="-5.5118" x2="2.159" y2="-7.5438" width="0.1524" layer="21"/>
 <wire x1="3.8608" y1="-5.5118" x2="3.8608" y2="-7.5438" width="0.1524" layer="21"/>
-<text x="-5.461" y="-10.287" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <text x="-5.08" y="6.35" size="1.016" layer="21">&gt;NAME</text>
 </package>
 <package name="NPCAP_PXG_E61">
@@ -4232,7 +4230,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <sheet>
 <plain>
 <text x="223.52" y="-175.26" size="2.54" layer="94">A</text>
-<text x="241.3" y="-175.26" size="2.54" layer="94">1.1</text>
+<text x="241.3" y="-175.26" size="2.54" layer="94">1.2</text>
 <text x="170.18" y="-157.48" size="2.54" layer="94">ROBOT ARM</text>
 <text x="187.96" y="-175.26" size="2.54" layer="94">0002</text>
 <text x="164.846" y="-166.37" size="2.54" layer="94">CONTROLLER</text>
@@ -4461,6 +4459,8 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <pinref part="IC1" gate="1" pin="GND@1"/>
 <wire x1="101.6" y1="-157.48" x2="104.14" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<junction x="104.14" y="-157.48"/>
+<junction x="104.14" y="-160.02"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -4483,6 +4483,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="60.96" y1="-165.1" x2="55.88" y2="-165.1" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="-165.1" x2="60.96" y2="-167.64" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
+<junction x="60.96" y="-165.1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -4597,6 +4598,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <wire x1="27.94" y1="-109.22" x2="66.04" y2="-109.22" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="-109.22" x2="66.04" y2="-111.76" width="0.1524" layer="91"/>
 <junction x="27.94" y="-109.22"/>
+<junction x="66.04" y="-111.76"/>
 </segment>
 <segment>
 <wire x1="137.16" y1="-134.62" x2="144.78" y2="-134.62" width="0.1524" layer="91"/>
@@ -5037,7 +5039,7 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <text x="165.354" y="-166.37" size="2.54" layer="94">CONTROLLER</text>
 <text x="187.96" y="-175.26" size="2.54" layer="94">0002</text>
 <text x="223.52" y="-175.26" size="2.54" layer="94">A</text>
-<text x="241.3" y="-175.26" size="2.54" layer="94">1.1</text>
+<text x="241.3" y="-175.26" size="2.54" layer="94">1.2</text>
 <text x="5.08" y="-177.8" size="1.778" layer="95">MICROSTEPPING CONFIGURABLE 
 WITH R7, R8 AND R9: SEE DATASHEET</text>
 <text x="7.62" y="-104.14" size="1.778" layer="95">POPULATE R2 TO ENABLE

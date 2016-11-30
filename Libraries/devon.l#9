@@ -290,7 +290,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="-0.3" y1="-0.7" x2="0.3" y2="0.7" layer="35"/>
 <smd name="1" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
 <smd name="2" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.016" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="R1210">
@@ -517,7 +517,7 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
 <smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
 <smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
-<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="1.016" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="-1.778" y1="0.762" x2="-1.778" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="1.778" y1="0.762" x2="1.778" y2="-0.762" width="0.127" layer="21"/>
@@ -1862,8 +1862,8 @@ Source: DCJ0202.pdf</description>
 <wire x1="4.826" y1="10.414" x2="4.826" y2="-1.524" width="0.127" layer="51"/>
 <wire x1="4.826" y1="-1.524" x2="-4.064" y2="-1.524" width="0.127" layer="51"/>
 <wire x1="-4.064" y1="-1.524" x2="-4.064" y2="10.414" width="0.127" layer="51"/>
-<text x="-10.16" y="13.97" size="1.016" layer="21">&gt;NAME</text>
-<text x="-10.16" y="11.938" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-10.16" y="13.97" size="1.016" layer="25">&gt;NAME</text>
+<text x="-10.16" y="11.938" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT230P700X180-4N">
 <smd name="1" x="-3.2004" y="2.3114" dx="1.6256" dy="0.889" layer="1"/>
@@ -1941,8 +1941,8 @@ Source: DCJ0202.pdf</description>
 <wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="2.286" y1="-0.762" x2="1.016" y2="0" width="0.127" layer="21"/>
 <wire x1="1.016" y1="0.762" x2="1.016" y2="-0.762" width="0.127" layer="21"/>
-<text x="-0.508" y="1.27" size="1.016" layer="21">&gt;NAME</text>
-<text x="-0.508" y="-2.54" size="1.27" layer="21">&gt;VALUE</text>
+<text x="-0.508" y="1.27" size="1.016" layer="25">&gt;NAME</text>
+<text x="-0.508" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="SOT95P270X145-5N">
 <smd name="1" x="-1.3716" y="0.9398" dx="1.3208" dy="0.5588" layer="1"/>
@@ -2282,8 +2282,8 @@ Source: DCJ0202.pdf</description>
 <package name="PA4344.104NLT">
 <smd name="2" x="0" y="-7.675" dx="12.5" dy="3.15" layer="1"/>
 <smd name="1" x="0" y="7.675" dx="12.5" dy="3.15" layer="1"/>
-<text x="-9.04" y="10.04" size="1.016" layer="51" ratio="10">&gt;NAME</text>
-<text x="-9" y="-11.45" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
+<text x="-9.04" y="10.04" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-9" y="-11.45" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <wire x1="-7.62" y1="8.6" x2="-8.85" y2="8.6" width="0.127" layer="21"/>
 <wire x1="-8.85" y1="8.6" x2="-8.85" y2="-8.6" width="0.127" layer="21"/>
 <wire x1="-8.85" y1="-8.6" x2="-7.62" y2="-8.6" width="0.127" layer="21"/>
@@ -2457,8 +2457,8 @@ Source: DCJ0202.pdf</description>
 <wire x1="-1.524" y1="-3.302" x2="9.144" y2="-3.302" width="0.127" layer="39"/>
 <wire x1="9.144" y1="-3.302" x2="9.144" y2="3.302" width="0.127" layer="39"/>
 <wire x1="9.144" y1="3.302" x2="-1.524" y2="3.302" width="0.127" layer="39"/>
-<text x="-1.27" y="-5.08" size="1.27" layer="21">&gt;VALUE</text>
-<text x="-1.27" y="3.81" size="1.016" layer="21">&gt;NAME</text>
+<text x="-1.27" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="3.81" size="1.016" layer="26">&gt;NAME</text>
 <wire x1="-1.27" y1="3.048" x2="8.89" y2="3.048" width="0.127" layer="21"/>
 <wire x1="8.89" y1="3.048" x2="8.89" y2="-3.048" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-3.048" x2="8.128" y2="-3.048" width="0.127" layer="21"/>
@@ -2514,8 +2514,8 @@ Source: DCJ0202.pdf</description>
 <wire x1="0.8128" y1="-0.635" x2="0.7874" y2="-0.1778" width="0.1524" layer="51" curve="-180"/>
 <wire x1="0.8128" y1="-1.4478" x2="0.7874" y2="-0.9906" width="0.1524" layer="51" curve="-180"/>
 <wire x1="-0.8128" y1="1.651" x2="0.8128" y2="1.651" width="0.1524" layer="51"/>
-<text x="-0.635" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-0.635" y="-3.175" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="1.905" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SOT-223">
 <smd name="G" x="-2.3" y="-3.2004" dx="0.9144" dy="1.6002" layer="1"/>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -249,10 +249,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
 <wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
 <rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
@@ -506,12 +502,8 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 </package>
 <package name="C0805">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;</description>
-<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
-<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
 <rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
 <rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
@@ -1392,12 +1384,7 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <smd name="30" x="-1.1938" y="4.1148" dx="0.508" dy="1.4732" layer="1" rot="R180"/>
 <smd name="31" x="-2.0066" y="4.1148" dx="0.508" dy="1.4732" layer="1" rot="R180"/>
 <smd name="32" x="-2.794" y="4.1148" dx="0.508" dy="1.4732" layer="1" rot="R180"/>
-<wire x1="-2.0066" y1="-6.1976" x2="-2.0066" y2="-5.1816" width="0.1524" layer="21"/>
-<wire x1="-1.1938" y1="5.1816" x2="-1.1938" y2="6.223" width="0.1524" layer="21"/>
-<wire x1="5.1816" y1="-0.381" x2="6.1976" y2="-0.381" width="0.1524" layer="21"/>
 <wire x1="-3.0734" y1="2.667" x2="-2.667" y2="3.0734" width="0.1524" layer="21"/>
-<text x="-6.0706" y="2.9464" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
-<text x="-6.0706" y="2.9464" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-3.5052" y1="-3.5052" x2="-3.0226" y2="-3.5052" width="0" layer="51"/>
 <wire x1="-2.5654" y1="-3.5052" x2="-2.2352" y2="-3.5052" width="0" layer="51"/>
 <wire x1="-1.778" y1="-3.5052" x2="-1.4224" y2="-3.5052" width="0" layer="51"/>
@@ -1567,8 +1554,6 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <wire x1="3.5052" y1="-2.2352" x2="3.5052" y2="2.2352" width="0" layer="51"/>
 <wire x1="2.5654" y1="3.5052" x2="-2.5654" y2="3.5052" width="0" layer="51"/>
 <wire x1="-3.5052" y1="3.0226" x2="-3.5052" y2="-3.0226" width="0" layer="51"/>
-<text x="-6.0706" y="2.9464" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
-<text x="-6.0706" y="2.9464" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-5.4864" y="-7.9756" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="7.9756" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -1605,8 +1590,8 @@ Source: http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf</descrip
 <wire x1="2.032" y1="-3.048" x2="2.032" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="2.032" y1="-2.032" x2="3.048" y2="-2.032" width="0.127" layer="21"/>
 <wire x1="3.048" y1="-2.032" x2="3.048" y2="-3.048" width="0.127" layer="21"/>
-<wire x1="4.032" y1="3.937" x2="5.302" y2="3.937" width="0.127" layer="21"/>
-<wire x1="4.667" y1="4.572" x2="4.667" y2="3.302" width="0.127" layer="21"/>
+<wire x1="3.032" y1="3.937" x2="4.302" y2="3.937" width="0.127" layer="21"/>
+<wire x1="3.667" y1="4.572" x2="3.667" y2="3.302" width="0.127" layer="21"/>
 </package>
 <package name="UX60A-MB-5ST">
 <description>&lt;b&gt;MINI USB Connector HI-SPEED Certified&lt;/b&gt; Metal Shield SMT Type Without Positioning Post&lt;p&gt;
@@ -1897,7 +1882,6 @@ Source: DCJ0202.pdf</description>
 <wire x1="0.7112" y1="-0.1524" x2="0.7112" y2="0.1524" width="0.1524" layer="21"/>
 <wire x1="0.2286" y1="1.0668" x2="-0.2286" y2="1.0668" width="0.1524" layer="21"/>
 <wire x1="0.127" y1="0.7874" x2="-0.127" y2="0.7874" width="0.1524" layer="21" curve="-49"/>
-<text x="-1.8796" y="0.8636" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.7112" y1="-1.0668" x2="0.7112" y2="-1.0668" width="0" layer="51"/>
 <wire x1="0.7112" y1="-1.0668" x2="0.7112" y2="-0.7874" width="0" layer="51"/>
 <wire x1="0.7112" y1="-0.7874" x2="0.7112" y2="-0.508" width="0" layer="51"/>
@@ -1930,17 +1914,12 @@ Source: DCJ0202.pdf</description>
 <wire x1="1.1938" y1="0.508" x2="1.1938" y2="0.7874" width="0" layer="51"/>
 <wire x1="1.1938" y1="0.7874" x2="0.7112" y2="0.7874" width="0" layer="51"/>
 <wire x1="0.3048" y1="1.0668" x2="-0.3048" y2="1.0668" width="0" layer="51" curve="-180"/>
-<text x="-1.8796" y="0.8636" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="2.54" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-3.4544" y="-4.445" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
 <package name="MBR0520LT1G">
 <smd name="C" x="0" y="0" dx="0.9652" dy="1.1684" layer="1"/>
 <smd name="A" x="3.2766" y="0" dx="0.9652" dy="1.1684" layer="1"/>
-<wire x1="1.016" y1="0" x2="2.286" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.286" y1="-0.762" x2="1.016" y2="0" width="0.127" layer="21"/>
-<wire x1="1.016" y1="0.762" x2="1.016" y2="-0.762" width="0.127" layer="21"/>
 <text x="-0.508" y="1.27" size="1.016" layer="25">&gt;NAME</text>
 <text x="-0.508" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -1956,7 +1935,6 @@ Source: DCJ0202.pdf</description>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="-0.3048" y1="1.5494" x2="-0.635" y2="1.5494" width="0.1524" layer="21"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0" layer="21" curve="-180"/>
-<text x="-2.2098" y="1.3716" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
 <wire x1="-0.889" y1="-1.5494" x2="0.889" y2="-1.5494" width="0.1524" layer="51"/>
 <wire x1="0.889" y1="-1.5494" x2="0.889" y2="-1.1938" width="0.1524" layer="51"/>
 <wire x1="0.889" y1="-1.1938" x2="0.889" y2="-0.6858" width="0.1524" layer="51"/>
@@ -1989,7 +1967,6 @@ Source: DCJ0202.pdf</description>
 <wire x1="1.6002" y1="0.6858" x2="1.6002" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="1.6002" y1="1.1938" x2="0.889" y2="1.1938" width="0.1524" layer="51"/>
 <wire x1="0.3048" y1="1.5494" x2="-0.3048" y2="1.5494" width="0" layer="51" curve="-180"/>
-<text x="-2.2098" y="1.3716" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-4.2672" y="2.0574" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.461" y="-4.0894" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
@@ -2227,17 +2204,31 @@ Source: DCJ0202.pdf</description>
 <package name="NPCAP_PXG_E61">
 <smd name="+" x="0" y="2" dx="1.5" dy="2.4" layer="1"/>
 <smd name="-" x="0" y="-2" dx="1.5" dy="2.4" layer="1"/>
-<wire x1="-2" y1="3.0612" x2="-2" y2="3.8232" width="0.1524" layer="21"/>
-<wire x1="-1.619" y1="3.4168" x2="-2.381" y2="3.4168" width="0.1524" layer="21"/>
-<wire x1="-2" y1="3.0612" x2="-2" y2="3.8232" width="0.1524" layer="51"/>
-<wire x1="-1.619" y1="3.4168" x2="-2.381" y2="3.4168" width="0.1524" layer="51"/>
+<wire x1="-2.635" y1="2.4262" x2="-2.635" y2="3.1882" width="0.1524" layer="51"/>
+<wire x1="-2.254" y1="2.7818" x2="-3.016" y2="2.7818" width="0.1524" layer="51"/>
 <wire x1="-2.65" y1="2.65" x2="-2.65" y2="-2.65" width="0.1524" layer="51"/>
 <wire x1="-2.65" y1="-2.65" x2="2.65" y2="-2.65" width="0.1524" layer="51"/>
 <wire x1="2.65" y1="-2.65" x2="2.65" y2="2.65" width="0.1524" layer="51"/>
 <wire x1="2.65" y1="2.65" x2="-2.65" y2="2.65" width="0.1524" layer="51"/>
 <wire x1="-1.9" y1="2.6" x2="-2.6" y2="1.9" width="0.127" layer="21"/>
 <wire x1="1.9" y1="2.6" x2="2.6" y2="1.9" width="0.127" layer="21"/>
-<text x="1.27" y="3.048" size="1.016" layer="21">&gt;NAME</text>
+<text x="1.27" y="3.048" size="1.016" layer="25">&gt;NAME</text>
+<polygon width="0.127" layer="39">
+<vertex x="-2.54" y="-2.54"/>
+<vertex x="-2.54" y="1.905"/>
+<vertex x="-1.905" y="2.54"/>
+<vertex x="-0.635" y="2.54"/>
+<vertex x="-0.635" y="3.175"/>
+<vertex x="0.635" y="3.175"/>
+<vertex x="0.635" y="2.54"/>
+<vertex x="1.905" y="2.54"/>
+<vertex x="2.54" y="1.905"/>
+<vertex x="2.54" y="-2.54"/>
+<vertex x="0.635" y="-2.54"/>
+<vertex x="0.635" y="-3.175"/>
+<vertex x="-0.635" y="-3.175"/>
+<vertex x="-0.635" y="-2.54"/>
+</polygon>
 </package>
 <package name="MBRAF440T3G">
 <smd name="C" x="0" y="0" dx="1.27" dy="1.778" layer="1"/>
@@ -2267,7 +2258,7 @@ Source: DCJ0202.pdf</description>
 <circle x="0" y="0" radius="6.35" width="0.127" layer="21"/>
 </package>
 <package name="PANASONIC_P2W_POT">
-<text x="-1.5" y="2.5" size="1.016" layer="51" ratio="10">&gt;NAME</text>
+<text x="-1.5" y="2.5" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.5" y="-3.5" size="1.27" layer="51" ratio="10">&gt;VALUE</text>
 <smd name="2" x="0" y="1.2" dx="1.2" dy="1.1" layer="1"/>
 <smd name="1" x="-0.6625" y="-1.3" dx="0.575" dy="0.8" layer="1"/>
@@ -2444,7 +2435,6 @@ Source: DCJ0202.pdf</description>
 <text x="11.25" y="-2.5" size="1.27" layer="27" ratio="6" align="bottom-right">&gt;VALUE</text>
 <text x="-11.25" y="-2.5" size="1.016" layer="25" ratio="6">&gt;NAME</text>
 <wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.127" layer="21"/>
-<wire x1="10.16" y1="0" x2="-10.16" y2="0" width="0.127" layer="21"/>
 <wire x1="-10.16" y1="0" x2="-10.16" y2="1.27" width="0.127" layer="21"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="1.27" width="0.127" layer="21"/>
 </package>
@@ -2685,7 +2675,23 @@ Source: DCJ0202.pdf</description>
 <wire x1="5.15" y1="5.15" x2="-5.15" y2="5.15" width="0.1524" layer="51"/>
 <wire x1="-2.9" y1="5.1" x2="-5.1" y2="2.9" width="0.127" layer="21"/>
 <wire x1="2.9" y1="5.1" x2="5.1" y2="2.9" width="0.127" layer="21"/>
-<text x="2.54" y="6.35" size="1.016" layer="21">&gt;NAME</text>
+<text x="2.54" y="6.35" size="1.016" layer="26">&gt;NAME</text>
+<polygon width="0.127" layer="39">
+<vertex x="-5.08" y="3.175"/>
+<vertex x="-5.08" y="-5.08"/>
+<vertex x="-0.635" y="-5.08"/>
+<vertex x="-0.635" y="-5.715"/>
+<vertex x="0.635" y="-5.715"/>
+<vertex x="0.635" y="-5.08"/>
+<vertex x="5.08" y="-5.08"/>
+<vertex x="5.08" y="3.175"/>
+<vertex x="3.175" y="5.08"/>
+<vertex x="0.635" y="5.08"/>
+<vertex x="0.635" y="5.715"/>
+<vertex x="-0.635" y="5.715"/>
+<vertex x="-0.635" y="5.08"/>
+<vertex x="-3.175" y="5.08"/>
+</polygon>
 </package>
 <package name="SOT-23-3L">
 <smd name="G" x="-0.95" y="-1.2446" dx="0.6604" dy="0.9144" layer="1"/>
@@ -4099,11 +4105,11 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <devices>
 <device name="UX60A-MB-5ST" package="UX60A-MB-5ST">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="5"/>
+<connect gate="G$1" pin="2" pad="4"/>
 <connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="4" pad="2"/>
+<connect gate="G$1" pin="5" pad="1"/>
 <connect gate="G$1" pin="SHLD" pad="M1 M2 M3 M4"/>
 </connects>
 <technologies>
@@ -4214,7 +4220,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY_PN" value="MBR0520LT1GOSCT-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4337,7 +4345,9 @@ Source: http://www.hirose.co.jp/cataloge_hp/e24000019.pdf</description>
 <connect gate="A" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY_PN" value="565-4292-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4718,7 +4728,9 @@ LETTER landscape</description>
 <connect gate="A" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY_PN" value="565-4527-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
